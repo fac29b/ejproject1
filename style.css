@@ -24,3 +24,42 @@ li {
   margin-bottom: 10px;
   text-transform: capitalize;
 }
+
+form{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: yellow
+}
+
+.contactBody{
+    max-width: 70rem;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+#topImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartoonSounds{
+    max-width: 25rem;
+}
+
+.topContactText{
+    text-align: center;
+}
+
+#imageBottom{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+}
