@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Need a hero? We're happy to help!</h1>
+    <p>
+      Fill out our form and we'll get back to you within a millisecond (our
+      admin team is super too)!
+    </p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" name="name" required />
+      <label for="company">Company:</label>
+      <input type="text" name="company" required />
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+      <label for="phone">Phone number:</label>
+      <input type="tel" name="phone" required />
+      <legend>Preferred hero:</legend>
+      <fieldset>
+        <div>
+          <input type="radio" name="hero" value="superwoman" id="superwoman" />
+          <label for="superwoman">Superwoman</label>
+        </div>
+
+        <div>
+          <input type="radio" name="hero" value="batman" id="batman" />
+          <label for="batman">Batman</label>
+        </div>
+
+        <div>
+          <input type="radio" name="hero" value="ironman" id="ironman" />
+          <label for="ironman">Ironman</label>
+        </div>
+
+        <div>
+          <input type="radio" name="hero" value="spiderman" id="spiderman" />
+          <label for="spiderman">Spiderman</label>
+        </div>
+      </fieldset>
+      <label for="message">Tell us about how we can save your company:</label>
+      <textarea name="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
