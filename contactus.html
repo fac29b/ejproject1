@@ -37,40 +37,25 @@
       </p>
       <form>
         <label for="name">Name:</label>
-        <input type="text" name="name" required />
+        <input class="contactBox" type="text" name="name" required />
         <label for="company">Company:</label>
-        <input type="text" name="company" required />
+        <input class="contactBox" type="text" name="company" required />
         <label for="email">Email:</label>
-        <input type="email" name="email" required />
+        <input class="contactBox" type="email" name="email" required />
         <label for="phone">Phone number:</label>
-        <input type="tel" name="phone" required />
+        <input class="contactBox" type="tel" name="phone" required />
         <legend>Preferred hero:</legend>
-        <fieldset>
-          <div>
-            <input
-              type="radio"
-              name="hero"
-              value="superwoman"
-              id="superwoman"
-            />
-            <label for="superwoman">Superwoman</label>
-          </div>
-
-          <div>
-            <input type="radio" name="hero" value="batman" id="batman" />
-            <label for="batman">Batman</label>
-          </div>
-
-          <div>
-            <input type="radio" name="hero" value="ironman" id="ironman" />
-            <label for="ironman">Ironman</label>
-          </div>
-
-          <div>
-            <input type="radio" name="hero" value="spiderman" id="spiderman" />
-            <label for="spiderman">Spiderman</label>
-          </div>
-        </fieldset>
+        <select name="hero">
+          <option value="superwoman">Superwoman</option>
+          <option value="batman">Batman</option>
+          <option value="spiderman">Spiderman</option>
+          <option value="ironman">Ironman</option>
+          <option value="unknown">I'm not sure</option>
+        </select>
+        <p id="notSure">
+          Not sure which hero is best for your company? Read their profiles
+          first!
+        </p>
         <label for="message">Tell us about how we can save your company:</label>
         <textarea name="message"></textarea>
         <button type="submit">Submit</button>
