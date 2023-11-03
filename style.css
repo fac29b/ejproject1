@@ -25,13 +25,11 @@ li {
   text-transform: capitalize;
 }
 
-
 .super-hero-main {
   max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .bioBox {
@@ -50,7 +48,9 @@ section {
   width: 450px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   text-align: center;
 }
 
@@ -95,120 +95,120 @@ span {
   color: #29a587;
 }
 form {
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-p{
-    color: white;
+p {
+  color: white;
 }
 
-h1{
-    color: white;
+h1 {
+  color: white;
 }
 
-label{
-    display: block;
-    font-size: 18px;
+label {
+  display: block;
+  font-size: 18px;
 }
 
-.contactBody{
-    max-width: 450px;
-    margin-left: auto; 
+.contactBody {
+  max-width: 450px;
+  margin-left: auto;
   margin-right: auto;
   border: solid 10px#29a587;
   border-radius: 10px;
 }
 
-#topImages{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+#topImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.cartoonSounds{
-    max-width: 20rem;
+.cartoonSounds {
+  max-width: 20rem;
 }
 
-.topContactText{
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+.topContactText {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#strapline{
-    font-size: 18px;
+#strapline {
+  font-size: 18px;
 }
 
-#imageBottom{
-    display: block;
+#imageBottom {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
 }
 
-.contactBox{
-    padding: 0.3rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    margin-top: 0.4rem;
-    border: none;
-    box-shadow:0 0 10px 2px #29a587;;
-    width: 400px;
+.contactBox {
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  border: none;
+  box-shadow: 0 0 10px 2px #29a587;
+  width: 400px;
 }
 
-textarea{
-    padding: 0.3rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    margin-top: 0.4rem;
-    border: none;
-    box-shadow:0 0 10px 2px #29a587;;
-    width: 400px;
-    height: 7rem;
-    font-size: 18px;
+textarea {
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  border: none;
+  box-shadow: 0 0 10px 2px #29a587;
+  width: 400px;
+  height: 7rem;
+  font-size: 18px;
 }
 
 select {
-    padding: 0.3rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    margin-top: 0.4rem;
-    border: none;
-    box-shadow:0 0 10px 2px #29a587;;
-    width: 400px;
-    font-size: 18px;
-    font-family: "Caveat", cursive;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  border: none;
+  box-shadow: 0 0 10px 2px #29a587;
+  width: 400px;
+  font-size: 18px;
+  font-family: "Caveat", cursive;
   font-family: "Onest", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Quicksand", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Rowdies", sans-serif;
-  }
+}
 
-  legend{
-    font-size: 18px;
-  }
+legend {
+  font-size: 18px;
+}
 
-  #notSure{
-    color: white;
-    margin-top: 0rem;
-    font-size: 22px;
+#notSure {
+  color: white;
+  margin-top: 0rem;
+  font-size: 22px;
 }
 
 button {
-    padding: 10px 30px;
-    background-color: #29a587;
-    border-radius: 10px;
-    box-shadow:0 0 10px 2px #29a587;;
-    border: none;
-    font-size: 18px;
-    color: #171b26;
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Caveat", cursive;
+  padding: 10px 30px;
+  background-color: #29a587;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px #29a587;
+  border: none;
+  font-size: 18px;
+  color: #171b26;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Caveat", cursive;
   font-family: "Onest", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Quicksand", sans-serif;
@@ -216,19 +216,19 @@ button {
   font-family: "Rowdies", sans-serif;
 }
 
-#linkToTeam{
-    color: #29a587;
+#linkToTeam {
+  color: #29a587;
 }
 
-#linkToTeam:hover{
-    color: red;
+#linkToTeam:hover {
+  color: red;
 }
 
-.bioBox{
-    display: flex;
+.bioBox {
+  display: flex;
 }
-.bioImage{
-    max-width: 40rem;
+.bioImage {
+  max-width: 40rem;
 }
 
 .dummy {
@@ -246,20 +246,6 @@ img {
   height: 100%;
 }
 
-/* img:hover {
-  transform: scale(1.11);
-  transition: transform 1.5s;
-  cursor: pointer;
-
-}  */
-
-/* .super-hero-image {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  transition: transform 1.5s;
-} */
-
 .super-hero-image {
   width: 100%;
   display: flex;
@@ -269,4 +255,21 @@ img {
 
 .super-hero-image:hover {
   transform: scale(1.11); /* Apply scaling on hover */
+}
+
+p {
+  text-transform: capitalize;
+}
+
+
+
+.super-hero-btn {
+  /* width: 20rem;
+  height: 4rem; */
+  background-color: transparent;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
