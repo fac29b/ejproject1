@@ -24,3 +24,10 @@ li {
   margin-bottom: 10px;
   text-transform: capitalize;
 }
+
+.bioBox{
+    display: flex;
+}
+.bioImage{
+    max-width: 40rem;
+}
