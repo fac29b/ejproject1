@@ -236,3 +236,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+aside {
+  padding: 10px;
+}
