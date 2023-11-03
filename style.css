@@ -25,6 +25,7 @@ li {
   text-transform: capitalize;
 }
 
+
 main {
   max-width: 100vw;
   /* height: 80%; */
@@ -84,4 +85,90 @@ footer {
 
 span {
   color: #29a587;
+
+form{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: yellow
+}
+
+label{
+    display: block;
+}
+
+.contactBody{
+    max-width: 70rem;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+#topImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cartoonSounds{
+    max-width: 20rem;
+}
+
+.topContactText{
+    text-align: center;
+}
+
+#imageBottom{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+}
+
+.contactBox{
+    padding: 0.3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    border: none;
+    box-shadow:0 0 10px 2px red;
+    width: 25rem;
+}
+
+textarea{
+    padding: 0.3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    border: none;
+    box-shadow:0 0 10px 2px red;
+    width: 50rem;
+    height: 7rem;
+}
+
+select {
+    padding: 0.3rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    border: none;
+    box-shadow:0 0 10px 2px red;
+    width: 20rem;
+    font-size: 1rem;
+  }
+
+  #notSure{
+    color: yellow;
+    margin-top: 0rem;
+    font-size: 1.5rem;
+}
+.bioBox{
+    display: flex;
+}
+.bioImage{
+    max-width: 40rem;
 }

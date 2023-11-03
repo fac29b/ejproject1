@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li>homepage</li>
+        <li>team page</li>
+        <li>contact us</li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="contactBody">
+      <div id="topImages">
+        <img
+          class="cartoonSounds"
+          src="Contact-us-images/pow.png"
+          alt="The word pow written in colourful, cartoon-style."
+        />
+        <img
+          class="cartoonSounds"
+          src="Contact-us-images/zap.png"
+          alt="The word zap written in colourful, cartoon-style."
+        />
+      </div>
+      <h1 class="topContactText">Need a hero? We're happy to help!</h1>
+      <p class="topContactText">
+        Fill out our form and we'll get back to you within a millisecond (our
+        admin team is super too)!
+      </p>
+      <form>
+        <label for="name">Name:</label>
+        <input class="contactBox" type="text" name="name" required />
+        <label for="company">Company:</label>
+        <input class="contactBox" type="text" name="company" required />
+        <label for="email">Email:</label>
+        <input class="contactBox" type="email" name="email" required />
+        <label for="phone">Phone number:</label>
+        <input class="contactBox" type="tel" name="phone" required />
+        <legend>Preferred hero:</legend>
+        <select name="hero">
+          <option value="superwoman">Superwoman</option>
+          <option value="batman">Batman</option>
+          <option value="spiderman">Spiderman</option>
+          <option value="ironman">Ironman</option>
+          <option value="unknown">I'm not sure</option>
+        </select>
+        <p id="notSure">
+          Not sure which hero is best for your company? Read their profiles
+          first!
+        </p>
+        <label for="message">Tell us about how we can save your company:</label>
+        <textarea name="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <img
+        class="cartoonSounds"
+        id="imageBottom"
+        src="Contact-us-images/kapow.png"
+        alt="The word kapow written in colourful, cartoon-style."
+      />
+    </div>
+  </body>
+</html>
