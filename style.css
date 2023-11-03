@@ -37,9 +37,10 @@ li {
   flex-direction: column;
   width: 400px;
   height: 525px;
-  border: 1px white solid;
+  border: 4px #29a587 solid;
   border-radius: 10px;
   margin-bottom: 40px;
+  
 }
 
 section {
@@ -232,6 +233,13 @@ button.super-hero-btn {
 a {
   color: #fff;
   text-decoration: none;
+  margin-right: 1px ;
+  transition: margin-right 0.3s;
+}
+
+a:hover {
+  margin-right: 15px;
+  
 }
 
 i {
@@ -255,11 +263,7 @@ i {
   max-width: 40rem;
 }
 
-.dummy {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+
 
 aside {
   padding: 10px;
