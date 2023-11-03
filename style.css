@@ -240,3 +240,33 @@ button {
 aside {
   padding: 10px;
 }
+
+img {
+  width: 90%;
+  height: 100%;
+}
+
+/* img:hover {
+  transform: scale(1.11);
+  transition: transform 1.5s;
+  cursor: pointer;
+
+}  */
+
+/* .super-hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 1.5s;
+} */
+
+.super-hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: transform 1.5s; /* Apply transition in the default state */
+}
+
+.super-hero-image:hover {
+  transform: scale(1.11); /* Apply scaling on hover */
+}
