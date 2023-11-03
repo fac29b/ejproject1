@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@300&family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
     <title>Contact Us</title>
   </head>
   <header>
@@ -21,19 +25,16 @@
       <div id="topImages">
         <img
           class="cartoonSounds"
-          src="Contact-us-images/pow.png"
-          alt="The word pow written in colourful, cartoon-style."
-        />
-        <img
-          class="cartoonSounds"
           src="Contact-us-images/zap.png"
           alt="The word zap written in colourful, cartoon-style."
         />
       </div>
-      <h1 class="topContactText">Need a hero? We're happy to help!</h1>
-      <p class="topContactText">
-        Fill out our form and we'll get back to you within a millisecond (our
-        admin team is super too)!
+      <h1 class="topContactText">
+        <span>Need a hero?</span> We're happy to help!
+      </h1>
+      <p class="topContactText" id="strapline">
+        Fill out our form and we'll get back to you in a millisecond (our admin
+        team is super too)!
       </p>
       <form>
         <label for="name">Name:</label>
@@ -53,8 +54,8 @@
           <option value="unknown">I'm not sure</option>
         </select>
         <p id="notSure">
-          Not sure which hero is best for your company? Read their profiles
-          first!
+          Not sure which hero is best for your company?
+          <a id="linkToTeam" href="/team.html">Read their profiles first!</a>
         </p>
         <label for="message">Tell us about how we can save your company:</label>
         <textarea name="message"></textarea>

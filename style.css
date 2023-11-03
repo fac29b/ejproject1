@@ -85,9 +85,11 @@ footer {
 
 span {
   color: #29a587;
-
-form{
+}
+form {
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 p{
@@ -95,17 +97,20 @@ p{
 }
 
 h1{
-    color: yellow
+    color: white;
 }
 
 label{
     display: block;
+    font-size: 18px;
 }
 
 .contactBody{
-    max-width: 70rem;
-    margin-left: auto;
+    max-width: 450px;
+    margin-left: auto; 
   margin-right: auto;
+  border: solid 10px#29a587;
+  border-radius: 10px;
 }
 
 #topImages{
@@ -120,6 +125,12 @@ label{
 
 .topContactText{
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#strapline{
+    font-size: 18px;
 }
 
 #imageBottom{
@@ -135,8 +146,8 @@ label{
     margin-bottom: 1rem;
     margin-top: 0.4rem;
     border: none;
-    box-shadow:0 0 10px 2px red;
-    width: 25rem;
+    box-shadow:0 0 10px 2px #29a587;;
+    width: 400px;
 }
 
 textarea{
@@ -145,9 +156,10 @@ textarea{
     margin-bottom: 1rem;
     margin-top: 0.4rem;
     border: none;
-    box-shadow:0 0 10px 2px red;
-    width: 50rem;
+    box-shadow:0 0 10px 2px #29a587;;
+    width: 400px;
     height: 7rem;
+    font-size: 18px;
 }
 
 select {
@@ -156,16 +168,54 @@ select {
     margin-bottom: 1rem;
     margin-top: 0.4rem;
     border: none;
-    box-shadow:0 0 10px 2px red;
-    width: 20rem;
-    font-size: 1rem;
+    box-shadow:0 0 10px 2px #29a587;;
+    width: 400px;
+    font-size: 18px;
+    font-family: "Caveat", cursive;
+  font-family: "Onest", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rowdies", sans-serif;
+  }
+
+  legend{
+    font-size: 18px;
   }
 
   #notSure{
-    color: yellow;
+    color: white;
     margin-top: 0rem;
-    font-size: 1.5rem;
+    font-size: 22px;
 }
+
+button {
+    padding: 10px 30px;
+    background-color: #29a587;
+    border-radius: 10px;
+    box-shadow:0 0 10px 2px #29a587;;
+    border: none;
+    font-size: 18px;
+    color: #171b26;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Caveat", cursive;
+  font-family: "Onest", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rowdies", sans-serif;
+}
+
+#linkToTeam{
+    color: #29a587;
+}
+
+#linkToTeam:hover{
+    color: red;
+}
+
 .bioBox{
     display: flex;
 }
