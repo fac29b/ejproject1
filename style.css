@@ -104,4 +104,10 @@ select {
     color: yellow;
     margin-top: 0rem;
     font-size: 1.5rem;
-  }
+}
+.bioBox{
+    display: flex;
+}
+.bioImage{
+    max-width: 40rem;
+}
