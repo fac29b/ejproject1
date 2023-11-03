@@ -36,7 +36,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 500px;
+  height: 525px;
   border: 1px white solid;
   border-radius: 10px;
   margin-bottom: 40px;
@@ -216,6 +216,30 @@ button {
   font-family: "Rowdies", sans-serif;
 }
 
+button.super-hero-btn {
+  text-align: left;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 0px;
+  background-color: transparent;
+  box-shadow: none;
+  padding-left: 10px;
+  height: fit-content;
+  
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+i {
+  color: #29a587;
+
+}
+
+
 #linkToTeam {
   color: #29a587;
 }
@@ -263,13 +287,3 @@ p {
 
 
 
-.super-hero-btn {
-  /* width: 20rem;
-  height: 4rem; */
-  background-color: transparent;
-  font-size: 1.8rem;
-  text-align: left;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
