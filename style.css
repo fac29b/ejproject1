@@ -40,15 +40,9 @@ li {
   height: 525px;
   border: 4px #29a587 solid;
   border-radius: 10px;
-  margin-bottom: 40px;
-  
 }
 
-section {
-  text-align: justify;
-  /* height: 300px; */
-  width: 450px;
-}
+
 
 h1,
 h2,
@@ -265,10 +259,17 @@ i {
   max-width: 40rem;
 }
 
+.bio {
+  padding: 10px
+}
+
+
+
 
 
 aside {
   padding: 10px;
+  text-align: justify;
 }
 
 img {
@@ -290,6 +291,19 @@ img {
 p {
   text-transform: capitalize;
 }
+
+.super-hero-section {
+  display: flex;
+  column-gap: 40px;
+
+}
+
+
+.super-hero-main > *:not(:first-child) {
+  margin-top: 40px;
+}
+
+
 
 
 
