@@ -90,7 +90,6 @@ footer {
   display: flex;
   flex-direction: column;
   width: 900px;
-  border: 1px red solid;
 }
 
 span {
