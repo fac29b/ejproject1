@@ -14,11 +14,8 @@ if(homePage) {
     homePage.addEventListener("click", goToHomePage);
 }
 
+function goToHomePage() {
+    window.location.assign("/index.html")
+}
 
-// if (searchByGenre) {
-//     searchByGenre.addEventListener("click", goToSearchByGenrePage);
-//   }
 
-//   function goToSearchByGenrePage() {
-//     window.location.assign("/searchByGenrePage.html");
-//   }
