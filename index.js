@@ -14,8 +14,19 @@ if(homePage) {
     homePage.addEventListener("click", goToHomePage);
 }
 
+
+
+if(teamPage) {
+    teamPage.addEventListener("click", goToTeamPage);
+}
+
+
+// functions
+
 function goToHomePage() {
     window.location.assign("/index.html")
 }
+
+
 
 
