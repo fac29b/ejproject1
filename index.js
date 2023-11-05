@@ -33,4 +33,8 @@ function goToTeamPage() {
     window.location.assign("/team.html")
 }
 
+function goToContactUsPage() {
+    window.location.assign("/contactus.html")
+}
+
 
