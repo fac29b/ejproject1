@@ -27,6 +27,8 @@ function goToHomePage() {
     window.location.assign("/index.html")
 }
 
-
+function goToTeamPage() {
+    window.location.assign("/team.html")
+}
 
 
