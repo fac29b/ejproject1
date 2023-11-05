@@ -14,10 +14,12 @@ if(homePage) {
     homePage.addEventListener("click", goToHomePage);
 }
 
-
-
 if(teamPage) {
     teamPage.addEventListener("click", goToTeamPage);
+}
+
+if(conctactUs) {
+    conctactUs.addEventListener("click", goToContactUsPage)
 }
 
 
