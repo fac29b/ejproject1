@@ -1,6 +1,5 @@
 body {
   background-color: #171b26;
-  /* height: 100vh; */
   font-family: "Caveat", cursive;
   font-family: "Onest", sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -13,16 +12,21 @@ body {
 
 ul {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
   list-style: none;
   border-bottom: white 3px solid;
   max-width: 100vw;
 }
 
+
 li {
   margin-bottom: 10px;
   text-transform: capitalize;
+  transition: transform 1.5s ease; /* Set the transition for the transform property */
+}
+
+li:hover {
+  transform: scale(1.2); /* Apply the transform property for the hover state */
 }
 
 .super-hero-main {
@@ -42,8 +46,6 @@ li {
   border-radius: 10px;
 }
 
-
-
 h1,
 h2,
 p {
@@ -58,7 +60,6 @@ footer {
   max-width: 100vw;
   border-top: 1px solid white;
   height: 5%;
-  /* bottom: 0px; */
   text-align: center;
   padding: 10px;
 }
@@ -262,10 +263,6 @@ i {
 .bio {
   padding: 10px
 }
-
-
-
-
 
 aside {
   padding: 10px;
