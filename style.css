@@ -311,6 +311,12 @@ p {
   }
 }
 
+@media (max-width: 410px) {
+  .bioBox {
+    width: 340px;
+  }
+}
+
 
 /* @media (max-width: 500px) {
   html {
