@@ -296,11 +296,30 @@ p {
 
 }
 
-
 .super-hero-main > *:not(:first-child) {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+
+/* responsiveness */
+
+@media (max-width: 859px) {
+  .super-hero-section {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+
+/* @media (max-width: 500px) {
+  html {
+    font-size: 52.5%;
+  }
+  .choice {
+    width: 400px;
+  }
+} */
 
 
 
