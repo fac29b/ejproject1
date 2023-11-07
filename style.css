@@ -317,6 +317,18 @@ p {
   }
 }
 
+@media (max-width: 280px) {
+  .bioBox {
+    width: 255px;
+  }
+}
+
+ul {
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+}
+
 
 /* @media (max-width: 500px) {
   html {
