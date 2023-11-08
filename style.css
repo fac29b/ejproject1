@@ -154,6 +154,7 @@ label {
   border: none;
   box-shadow: 0 0 10px 2px #29a587;
   width: 400px;
+  background-color: #1d222a;
 }
 
 textarea {
@@ -176,13 +177,15 @@ select {
   border: none;
   box-shadow: 0 0 10px 2px #29a587;
   width: 400px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Caveat", cursive;
   font-family: "Onest", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Quicksand", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Rowdies", sans-serif;
+  background-color: #1d222a;
+  color: white
 }
 
 legend {
@@ -225,6 +228,10 @@ button.super-hero-btn {
   padding-left: 10px;
   height: fit-content;
   
+}
+
+textarea {
+  background-color: #1d222a;
 }
 
 a {
