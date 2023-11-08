@@ -153,7 +153,7 @@ label {
   margin-top: 0.4rem;
   border: none;
   box-shadow: 0 0 10px 2px #29a587;
-  width: 400px;
+  width: 100%;
   background-color: #1d222a;
 }
 
@@ -176,7 +176,7 @@ select {
   margin-top: 0.4rem;
   border: none;
   box-shadow: 0 0 10px 2px #29a587;
-  width: 400px;
+  width: 100%;
   font-size: 14px;
   font-family: "Caveat", cursive;
   font-family: "Onest", sans-serif;
@@ -232,6 +232,7 @@ button.super-hero-btn {
 
 textarea {
   background-color: #1d222a;
+  width: 100%;
 }
 
 a {
