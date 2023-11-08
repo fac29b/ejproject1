@@ -247,11 +247,16 @@ i {
 
 #linkToTeam {
   color: #29a587;
+  transition: color 1s ease-in-out;
 }
 
 #linkToTeam:hover {
   color: red;
 }
+
+
+
+
 
 .bioBox {
   display: flex;
