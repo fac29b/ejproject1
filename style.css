@@ -23,6 +23,7 @@ ul {
 }
 
 
+
 li {
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -74,6 +75,11 @@ footer {
   height: 5%;
   text-align: center;
   padding: 10px;
+}
+
+.fa-brands {
+  height: 15px;
+  width: 15px;
 }
 
 .images {
