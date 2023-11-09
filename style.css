@@ -138,11 +138,7 @@ label {
   margin-bottom: 40px;
 }
 
-#topImages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+
 
 .cartoonSounds {
   max-width: 20rem;
