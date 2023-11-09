@@ -177,7 +177,7 @@ label {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
-  box-shadow: 0 0 10px 2px #29a587;
+ 
   width: 100%;
   background-color: #1d222a;
 }
@@ -188,7 +188,7 @@ textarea {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
-  box-shadow: 0 0 10px 2px #29a587;
+ 
   width: 400px;
   height: 7rem;
   font-size: 18px;
@@ -201,7 +201,6 @@ select {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
-  box-shadow: 0 0 10px 2px #29a587;
   width: 102.5%;
   font-size: 14px;
   font-family: "Caveat", cursive;
