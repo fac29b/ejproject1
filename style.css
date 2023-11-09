@@ -1,10 +1,5 @@
 body {
   background-color: #171b26;
-  font-family: "Caveat", cursive;
-  font-family: "Onest", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
   font-family: "Rowdies", sans-serif;
   color: white;
   position: relative;
@@ -183,19 +178,17 @@ label {
 }
 
 
-textarea {
-  background-color: #1d222a;
-  width: 100%;
-}
+
 
 textarea {
+  background-color: #1d222a;
   padding: 0.3rem;
   border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
   border: 2px white solid;
-  width: 400px;
+  width: 97%;
   height: 7rem;
   font-size: 18px;
   color: white;
@@ -278,7 +271,7 @@ i {
 }
 
 #linkToTeam:hover {
-  color: red;
+  color: white;
 }
 
 
