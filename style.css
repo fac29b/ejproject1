@@ -177,9 +177,15 @@ label {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
- 
+  border: 2px white solid;
   width: 100%;
   background-color: #1d222a;
+}
+
+
+textarea {
+  background-color: #1d222a;
+  width: 100%;
 }
 
 textarea {
@@ -188,7 +194,7 @@ textarea {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
- 
+  border: 2px white solid;
   width: 400px;
   height: 7rem;
   font-size: 18px;
@@ -210,7 +216,8 @@ select {
   font-family: "Roboto", sans-serif;
   font-family: "Rowdies", sans-serif;
   background-color: #1d222a;
-  color: white
+  color: white;
+  border: 2px white solid;
 }
 
 legend {
@@ -255,10 +262,7 @@ button.super-hero-btn {
   
 }
 
-textarea {
-  background-color: #1d222a;
-  width: 100%;
-}
+
 
 a {
   color: #fff;
