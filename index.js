@@ -2,6 +2,11 @@ const footer = document.querySelector("footer");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
 const conctactUs = document.querySelector(".contact-us");
+const requestBtn = document.querySelector(".submit-btn");
+const requestMessage = document.querySelector(".request-submitted-msg");
+
+
+
 
 
 console.log(homePage, teamPage, conctactUs)
@@ -64,4 +69,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+if(requestBtn) {
+  requestBtn.addEventListener("click", function() {
+    console.log("josue")
+    requestMessage.style.visibility === "visible"
+    // requestMessage.style.visibility = "visible"
+  
+  })
+
+}
+
 

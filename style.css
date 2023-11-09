@@ -18,6 +18,31 @@ ul {
   max-width: 100vw;
 }
 
+form {
+  position: relative;
+}
+
+.request-submitted-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border: 1px solid red;
+  background-color: #fff;
+  border-radius: 10px;
+  /* text-transform: capitalize; */
+  text-align: center;
+
+  background-color: #1d222a;
+  visibility: hidden;
+ 
+}
+
 
 li {
   margin-bottom: 10px;
@@ -167,6 +192,7 @@ textarea {
   width: 400px;
   height: 7rem;
   font-size: 18px;
+  color: white;
 }
 
 select {
@@ -302,6 +328,7 @@ img {
 p {
   /* text-transform: capitalize; */
 }
+
 
 .super-hero-section {
   display: flex;
