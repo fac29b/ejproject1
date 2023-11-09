@@ -124,7 +124,7 @@ form {
 
 p {
   color: white;
-  text-align: justify;
+  text-align: left;
   
 }
 
@@ -236,24 +236,22 @@ button {
   font-family: "Rowdies", sans-serif;
 }
 
-button.super-hero-btn {
+.super-hero-link {
   text-align: left;
   color: #fff;
-  border: none;
   cursor: pointer;
   margin-left: 0px;
-  background-color: transparent;
-  box-shadow: none;
   padding-left: 10px;
-  height: fit-content;
-  
+  padding-bottom: 20px;
+  padding-top: 15px;
+  font-size: 18px;
 }
 
 
 
 a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
   margin-right: 1px ;
   transition: margin-right 0.3s;
 }
@@ -295,7 +293,7 @@ i {
 
 aside {
   padding: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 img {
