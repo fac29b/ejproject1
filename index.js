@@ -2,12 +2,24 @@ const footer = document.querySelector("footer");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
 const conctactUs = document.querySelector(".contact-us");
-const requestBtn = document.querySelector(".submit-btn");
+const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
+const contacBox = Array.from(document.querySelectorAll(".contactBox"));
+
+
+console.log(contacBox)
 
 const currentYear = new Date().getFullYear();
 
 footer.innerHTML = ` Superheros ${currentYear}` 
+
+
+if(submitBtn) {
+  submitBtn.addEventListener("click", function() {
+    requestMessage.style.visibility = "visible";
+  })
+
+}
 
 
 if(homePage) {
@@ -65,14 +77,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-if(requestBtn) {
-  requestBtn.addEventListener("click", function() {
-    console.log("josue")
-    requestMessage.style.visibility === "visible"
-    // requestMessage.style.visibility = "visible"
-  
-  })
 
-}
 
 
