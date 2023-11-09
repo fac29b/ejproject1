@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Superhero Agency</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@300&family=Open+Sans:ital,wght@1,300&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400&family=Rowdies&display=swap" rel="stylesheet">
 <link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
+      />
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav>
@@ -22,54 +24,60 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.mi
             <li class="contact-us">contact us</li>
     </nav>
     <main class="super-hero-main">
-        <section>
-            <h1><span>What</span> we do </h1>
+      <h1 id="mainTitle">The <span>Vigilante</span> Agency</h1>
+      <hr id="pageDivide">
+       <div class="mainPageBox">
+      <section class="introText" id="intoTextTop">
+            <h2><span>What</span> we do </h2>
             <p>At our heart, <span>we’re problem solvers here to save the day.</span> Your child been kidnapped? Terrorists threatening to blow up your building? A supervillain aiming the world’s strongest laser at the planet? These are the types of challenges we strive at, and for our team,<span> the bigger the problem the better.</span>   </p>
         </section>
-        <section>
-            <h1><span>Who</span> we are</h1>
+        <img id="logo" src="images/logo.jpeg" alt="The Vigilante Agnecy logo. It contains cartoon superheros and the VA letters in front.">
+      </div>
+      <hr id="pageDivide">
+      <div class="mainPageBox">
+        <section class="pictures">
+          <h2>Our team in action</h2>
+
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img class="slidePics" src="images/batman-over-gotham.png">
+              <figcaption class="text">Batman protecting Gotham City</figcaption>
+            </div>
+          
+            <div class="mySlides fade">
+              <img class="slidePics" src="images/wonderwoman-shield.webp">
+              <figcaption class="text">Womderwoman bracing for the fight</figcaption>
+            </div>
+          
+            <div class="mySlides fade">
+              <img class="slidePics" src="images/spiderman-scaling.webp">
+              <figcaption class="text">Spiderman ready to leap into action</figcaption>
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slidePics" src="images/ironman-stance.webp">
+              <figcaption class="text">Ironman harnessing his powers</figcaption>
+            </div>
+        <div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div id="dotParent">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>  
+        </div>    
+      </section>
+        <section class="introText" id="intoTextTop">
+            <h2><span>Who</span> we are</h2>
             <p>We’re a team of <span>intergalactically renowned superheroes</span>, coming together from different universes to find solutions to your problems. We combine strength, expertise, and skill with cutting edge technology to assemble <span>the ultimate team to solve any threat you may be facing.</span> Our four hero associates can be hired independently, as a team, or in a bespoke combination to meet your needs.</p>
         </section>
-        <section>
-            <h1><span>How</span> we started</h1>
-            <p>After having individually saved the world too many times to count, <span>we realised that our unique skills and experience could be combined</span> into an undefeatable support service for customers, and XXXXX was born. Now, we want to be <span>the heroes you need to save the day</span> over and over again!</p>
-        </section>
-        <section class="pictures">
-            <h1>Our team in action</h1>
-
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <img class="slidePics" src="images/batman-over-gotham.png">
-                <figcaption class="text">Batman protecting Gotham City</figcaption>
-              </div>
-            
-              <div class="mySlides fade">
-                <img class="slidePics" src="images/wonderwoman-shield.webp">
-                <figcaption class="text">Womderwoman bracing for the fight</figcaption>
-              </div>
-            
-              <div class="mySlides fade">
-                <img class="slidePics" src="images/spiderman-scaling.webp">
-                <figcaption class="text">Spiderman ready to leap into action</figcaption>
-              </div>
-
-              <div class="mySlides fade">
-                <img class="slidePics" src="images/ironman-stance.webp">
-                <figcaption class="text">Ironman harnessing his powers</figcaption>
-              </div>
-          <div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            <div id="dotParent">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-            </div>  
-          </div>    
-        </section>
+        
+        
+      </div>
     </main>
     <footer>
        
