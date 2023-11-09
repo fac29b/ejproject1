@@ -5,11 +5,6 @@ const conctactUs = document.querySelector(".contact-us");
 const requestBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
 
-
-
-
-
-console.log(homePage, teamPage, conctactUs)
 const currentYear = new Date().getFullYear();
 
 footer.innerHTML = ` Superheros ${currentYear}` 
