@@ -6,7 +6,7 @@ const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
 const contacBox = Array.from(document.querySelectorAll(".contactBox"));
 
-console.log(contacBox[0].innerText);
+
 console.log(contacBox.every((x) => x.innerText === ""))
 console.log(contacBox)
 
