@@ -1,11 +1,6 @@
 
 body {
   background-color: #171b26;
-  font-family: "Caveat", cursive;
-  font-family: "Onest", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
   font-family: "Rowdies", sans-serif;
   color: white;
   position: relative;
@@ -66,6 +61,7 @@ nav {
   top: 0;
   width: 100%; 
   background-color: #171b26;
+  z-index: 1;
 }
 
 footer {
@@ -187,11 +183,6 @@ select {
   box-shadow: 0 0 10px 2px #29a587;
   width: 102.5%;
   font-size: 14px;
-  font-family: "Caveat", cursive;
-  font-family: "Onest", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
   font-family: "Rowdies", sans-serif;
   background-color: #1d222a;
   color: white
@@ -293,7 +284,7 @@ aside {
 
 img {
   width: 90%;
-  height: 100%;
+  height: 80%;
   border-radius: 10px;
 }
 
@@ -365,13 +356,19 @@ p {
 
 .pictures{
     flex-shrink: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    width: 35%;
 }
 
+
 .slideshow-container {
-  max-width: 800px;
+ 
+ 
   position: relative;
-  margin: auto;
-  margin-right: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  /* flex-shrink: 1; */
 }
 
 .mySlides {
@@ -379,9 +376,7 @@ p {
 }
 
 .slidePics{
-    width: 450px;
-    height: 300px;
-    object-fit: cover;
+    width: 100%;
 }
 
 .prev, .next {
@@ -459,14 +454,16 @@ p {
 .mainPageBox{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #logo{
-   width: 40%;
+   width: 35%;
    border: solid white 4px;
    margin-left: 30px;
    margin-right: 30px;
    flex-shrink: 1;
+   flex-grow: 1;
 }
 
 .introText{
@@ -474,9 +471,9 @@ p {
     flex-direction: column;
     justify-content: center; 
     text-align: center; 
-    width: 50%; 
-    margin: 10px;
-    flex-shrink: 1;
+    width: 45%; 
+    margin: 30px;
+
 }
 
 
@@ -500,17 +497,34 @@ hr{
   to {opacity: 1}
 }
 
+@media only screen and (max-width: 800px) {
+    .slideshow-container{
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .introText {
       width: 100%;
     }
     #logo{
-        width: 100%;
+        /* width: 80%; */
     }
+  .text{
+    font-size: 14px;
   }
+  p {
+    text-align: center;
+  }
+}
 
   @media only screen and (max-width: 400px) {
     body {
         margin-top: 120px;
     }
+    #mainTitle{
+        font-size: 80px;
+    }
+   
   }
