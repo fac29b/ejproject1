@@ -12,7 +12,7 @@ const currentYear = new Date().getFullYear();
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
-console.log(body)
+console.log(footer)
 
 
 
@@ -22,6 +22,10 @@ if (submitBtn) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
       body.style.backgroundImage = "url('images/logo.jpeg')";
+      body.style.backgroundPosition = "center";
+      body.style.backgroundRepeat = "no-repeat";
+      body.style.backgroundSize = "fill"; 
+      footer.style.zIndex = 100;
     } else {
       form.reportValidity();
     }
