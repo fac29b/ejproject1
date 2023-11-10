@@ -12,16 +12,19 @@ const currentYear = new Date().getFullYear();
 footer.innerHTML = ` Superheros ${currentYear}`;
 
 
+
 if (submitBtn) {
   submitBtn.addEventListener("click", function (e) {
-    if((submitBtn.checkValidity())) {}
-    e.preventDefault();
-    if (contacBoxes.every((input) => input.value.trim() !== "")) {
+    if (form.checkValidity()) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
-    } 
+    } else {
+      form.reportValidity();
+    }
+    e.preventDefault();
   });
 }
+
 
 if (homePage) {
   homePage.addEventListener("click", goToHomePage);
