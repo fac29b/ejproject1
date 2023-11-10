@@ -4,7 +4,7 @@ const teamPage = document.querySelector(".team-page");
 const conctactUs = document.querySelector(".contact-us");
 const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
-const contacBox = Array.from(document.querySelectorAll(".contactBox"));
+const contacBox = Array.from(document.querySelectorAll(".contact-box"));
 
 
 console.log(contacBox.every((x) => x.innerText === ""))
@@ -15,8 +15,9 @@ const currentYear = new Date().getFullYear();
 footer.innerHTML = ` Superheros ${currentYear}`;
 
 if (submitBtn) {
-  submitBtn.addEventListener("click", function () {
-    if (contacBox.every((x) => x.innerText === "")) {
+  submitBtn.addEventListener("click", function (e) {
+    e.preventDefault()
+    if (contacBox.every((x) => x.value !== "")) {
       
       requestMessage.style.visibility = "visible";
     }
