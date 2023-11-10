@@ -17,6 +17,30 @@ ul {
   padding-left: 0;
 }
 
+form {
+  position: relative;
+}
+
+.request-submitted-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border: 1px solid red;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+
+  background-color: #1d222a;
+  visibility: hidden;
+ 
+}
+
 
 li {
   margin-bottom: 10px;
@@ -101,7 +125,7 @@ form {
 
 p {
   color: white;
-  text-align: justify;
+  text-align: left;
   
 }
 
@@ -114,7 +138,7 @@ label {
   font-size: 18px;
 }
 
-.contactBody {
+.contact-body {
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
@@ -124,17 +148,13 @@ label {
   margin-bottom: 40px;
 }
 
-#topImages {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+
 
 .cartoonSounds {
   max-width: 20rem;
 }
 
-.topContactText {
+.top-contact-text {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -151,27 +171,32 @@ label {
   padding-top: 1rem;
 }
 
-.contactBox {
+.contact-box {
   padding: 0.3rem;
   border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
-  box-shadow: 0 0 10px 2px #29a587;
-  width: 100%;
+  border: 2px white solid;
+  width: 97%;
   background-color: #1d222a;
 }
 
+
+
+
 textarea {
+  background-color: #1d222a;
   padding: 0.3rem;
   border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
-  box-shadow: 0 0 10px 2px #29a587;
-  width: 400px;
+  border: 2px white solid;
+  width: 97%;
   height: 7rem;
   font-size: 18px;
+  color: white;
 }
 
 select {
@@ -180,19 +205,19 @@ select {
   margin-bottom: 1rem;
   margin-top: 0.4rem;
   border: none;
-  box-shadow: 0 0 10px 2px #29a587;
-  width: 102.5%;
+  width: 100%;
   font-size: 14px;
   font-family: "Rowdies", sans-serif;
   background-color: #1d222a;
-  color: white
+  color: white;
+  border: 2px white solid;
 }
 
 legend {
   font-size: 18px;
 }
 
-#notSure {
+#not-sure {
   color: white;
   margin-top: 0rem;
   font-size: 22px;
@@ -202,42 +227,32 @@ button {
   padding: 10px 30px;
   background-color: #29a587;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px #29a587;
   border: none;
   font-size: 18px;
   color: #171b26;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Caveat", cursive;
-  font-family: "Onest", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
+  margin-bottom: 21.440px;
   font-family: "Rowdies", sans-serif;
 }
 
-button.super-hero-btn {
+.super-hero-link {
   text-align: left;
   color: #fff;
-  border: none;
   cursor: pointer;
   margin-left: 0px;
-  background-color: transparent;
-  box-shadow: none;
   padding-left: 10px;
-  height: fit-content;
-  
+  padding-bottom: 20px;
+  padding-top: 15px;
+  font-size: 18px;
 }
 
-textarea {
-  background-color: #1d222a;
-  width: 100%;
-}
+
 
 a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
   margin-right: 1px ;
   transition: margin-right 0.3s;
 }
@@ -253,13 +268,13 @@ i {
 }
 
 
-#linkToTeam {
+#link-to-team {
   color: #29a587;
   transition: color 1s ease-in-out;
 }
 
-#linkToTeam:hover {
-  color: red;
+#ink-to-team:hover {
+  color: white;
 }
 
 
@@ -279,7 +294,7 @@ i {
 
 aside {
   padding: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 img {
@@ -302,6 +317,7 @@ img {
 p {
   /* text-transform: capitalize; */
 }
+
 
 .super-hero-section {
   display: flex;

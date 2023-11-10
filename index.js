@@ -2,66 +2,80 @@ const footer = document.querySelector("footer");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
 const conctactUs = document.querySelector(".contact-us");
+const submitBtn = document.querySelector(".submit-btn");
+const requestMessage = document.querySelector(".request-submitted-msg");
+const contacBox = Array.from(document.querySelectorAll(".contactBox"));
 
 
-console.log(homePage, teamPage, conctactUs)
+console.log(contacBox.every((x) => x.innerText === ""))
+console.log(contacBox)
+
 const currentYear = new Date().getFullYear();
 
-footer.innerHTML = ` Superheros ${currentYear}` 
+footer.innerHTML = ` Superheros ${currentYear}`;
 
-
-if(homePage) {
-    homePage.addEventListener("click", goToHomePage);
+if (submitBtn) {
+  submitBtn.addEventListener("click", function () {
+    if (contacBox.every((x) => x.innerText === "")) {
+      
+      requestMessage.style.visibility = "visible";
+    }
+  });
 }
 
-if(teamPage) {
-    teamPage.addEventListener("click", goToTeamPage);
+if (homePage) {
+  homePage.addEventListener("click", goToHomePage);
 }
 
-if(conctactUs) {
-    conctactUs.addEventListener("click", goToContactUsPage)
+if (teamPage) {
+  teamPage.addEventListener("click", goToTeamPage);
 }
 
+if (conctactUs) {
+  conctactUs.addEventListener("click", goToContactUsPage);
+}
 
 // functions
 
 function goToHomePage() {
-    window.location.assign("/index.html")
+  window.location.assign("/index.html");
 }
 
 function goToTeamPage() {
-    window.location.assign("/team.html")
+  window.location.assign("/team.html");
 }
 
 function goToContactUsPage() {
-    window.location.assign("/contactus.html")
+  window.location.assign("/contactus.html");
 }
-
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
-
