@@ -5,6 +5,7 @@ body {
   color: white;
   position: relative;
   margin-top: 60px;
+  position: relative;
 }
 
 ul {
@@ -18,7 +19,7 @@ ul {
 }
 
 form {
-  position: relative;
+  /* position: relative; */
 }
 
 .request-submitted-msg {
