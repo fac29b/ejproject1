@@ -1,5 +1,5 @@
 const footer = document.querySelector("footer");
-const body = document.querySelector("body")
+const body = document.querySelector("body");
 const form = document.querySelector("form");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
@@ -12,10 +12,6 @@ const currentYear = new Date().getFullYear();
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
-console.log(footer)
-
-
-
 if (submitBtn) {
   submitBtn.addEventListener("click", function (e) {
     if (form.checkValidity()) {
@@ -24,14 +20,13 @@ if (submitBtn) {
       body.style.backgroundImage = "url('images/logo.jpeg')";
       body.style.backgroundPosition = "center";
       body.style.backgroundRepeat = "no-repeat";
-      body.style.backgroundSize = "fill"; 
+      body.style.backgroundSize = "fill";
     } else {
       form.reportValidity();
     }
     e.preventDefault();
   });
 }
-
 
 if (homePage) {
   homePage.addEventListener("click", goToHomePage);
