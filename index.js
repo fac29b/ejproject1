@@ -1,4 +1,5 @@
 const footer = document.querySelector("footer");
+const form = document.querySelector("form");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
 const conctactUs = document.querySelector(".contact-us");
@@ -8,18 +9,17 @@ const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
 const currentYear = new Date().getFullYear();
 
-
-
-
 footer.innerHTML = ` Superheros ${currentYear}`;
+
 
 if (submitBtn) {
   submitBtn.addEventListener("click", function (e) {
+    if((submitBtn.checkValidity())) {}
     e.preventDefault();
     if (contacBoxes.every((input) => input.value.trim() !== "")) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
-    }
+    } 
   });
 }
 
