@@ -315,11 +315,6 @@ img {
   transform: scale(1.11); /* Apply scaling on hover */
 }
 
-p {
-  /* text-transform: capitalize; */
-}
-
-
 .super-hero-section {
   display: flex;
   column-gap: 40px;
@@ -357,19 +352,6 @@ p {
     padding-left: 0px;
   }
 }
-
-
-
-
-/* @media (max-width: 500px) {
-  html {
-    font-size: 52.5%;
-  }
-  .choice {
-    width: 400px;
-  }
-} */
-
 
 .pictures{
     flex-shrink: 1;
