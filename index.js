@@ -1,25 +1,30 @@
 const footer = document.querySelector("footer");
+const body = document.querySelector("body");
+const form = document.querySelector("form");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
 const conctactUs = document.querySelector(".contact-us");
 const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
-const contacBox = Array.from(document.querySelectorAll(".contactBox"));
-
-
-console.log(contacBox.every((x) => x.innerText === ""))
-console.log(contacBox)
-
+const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
+const contactBody = document.querySelector(".contact-body");
 const currentYear = new Date().getFullYear();
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
 if (submitBtn) {
-  submitBtn.addEventListener("click", function () {
-    if (contacBox.every((x) => x.innerText === "")) {
-      
+  submitBtn.addEventListener("click", function (e) {
+    if (form.checkValidity()) {
       requestMessage.style.visibility = "visible";
+      contactBody.style.visibility = "hidden";
+      body.style.backgroundImage = "url('images/logo.jpeg')";
+      body.style.backgroundPosition = "center";
+      body.style.backgroundRepeat = "no-repeat";
+      body.style.backgroundSize = "fill";
+    } else {
+      form.reportValidity();
     }
+    e.preventDefault();
   });
 }
 
