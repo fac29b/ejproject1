@@ -9,7 +9,7 @@ const contactBody = document.querySelector(".contact-body");
 const currentYear = new Date().getFullYear();
 
 
-console.log(contactBody)
+
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
