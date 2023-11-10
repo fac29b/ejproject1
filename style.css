@@ -24,9 +24,9 @@ ul {
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 280px;
+  height: 250px;
   position: absolute;
-  padding: 0 10px; /* top/bottom 0, left/right 10px */
+  padding: 0 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
