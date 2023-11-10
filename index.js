@@ -1,4 +1,5 @@
 const footer = document.querySelector("footer");
+const body = document.querySelector("body")
 const form = document.querySelector("form");
 const homePage = document.querySelector(".home-page");
 const teamPage = document.querySelector(".team-page");
@@ -11,6 +12,8 @@ const currentYear = new Date().getFullYear();
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
+console.log(body)
+
 
 
 if (submitBtn) {
@@ -18,6 +21,7 @@ if (submitBtn) {
     if (form.checkValidity()) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
+      body.style.backgroundImage = "url('images/logo.jpeg')";
     } else {
       form.reportValidity();
     }
