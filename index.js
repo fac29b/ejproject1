@@ -25,7 +25,6 @@ if (submitBtn) {
       body.style.backgroundPosition = "center";
       body.style.backgroundRepeat = "no-repeat";
       body.style.backgroundSize = "fill"; 
-      footer.style.zIndex = 100;
     } else {
       form.reportValidity();
     }
