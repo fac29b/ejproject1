@@ -17,7 +17,7 @@ footer.innerHTML = ` Superheros ${currentYear}`;
 if (submitBtn) {
   submitBtn.addEventListener("click", function (e) {
     e.preventDefault()
-    if (contacBoxes.every((x) => x.value !== "")) {
+    if (contacBoxes.every((input) => input.value !== "")) {
       
       requestMessage.style.visibility = "visible";
     }
