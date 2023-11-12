@@ -420,7 +420,7 @@ img {
   animation-duration: 1.5s;
 }
 
-.mainPageBox {
+.main-page-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
