@@ -1,7 +1,8 @@
 
 // index.html page
-const homePage = document.querySelector(".home-page");
 const  dots = document.querySelectorAll(".dot");
+const  mySlides = document.querySelectorAll(".mySlides");
+const homePage = document.querySelector(".home-page");
 const  slideshowContainer = document.querySelector(".slideshow-container");
 const  prev = document.querySelector(".prev");
 const  next = document.querySelector(".next");
@@ -19,6 +20,9 @@ const footer = document.querySelector("footer");
 const body = document.querySelector("body");
 // variables
 const currentYear = new Date().getFullYear();
+
+
+console.log(mySlides)
 
 
 
@@ -67,10 +71,22 @@ function goToContactUsPage() {
 }
 
 
-function carousel() {
+// function carousel() {
+//   let currenSlide = 0;
+//   let clear;
+
+//   function advance(index) {
+//     slideToNext(index);
+
+//     clear = setTimeout(() => {
+//       if (index + 1 >= )
+//     })
+
+   
+//   }
   
 
-}
+// }
 
 
 
