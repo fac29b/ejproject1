@@ -8,7 +8,11 @@ const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
 const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
+const  dots = document.querySelectorAll(".dot");
 const currentYear = new Date().getFullYear();
+
+
+console.log(dots)
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
@@ -54,33 +58,8 @@ function goToContactUsPage() {
   window.location.assign("/contactus.html");
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+
+
