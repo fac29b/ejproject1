@@ -23,7 +23,6 @@ ul {
 
 .request-submitted-msg {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -37,9 +36,9 @@ ul {
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
-
   background-color: #1d222a;
   visibility: hidden;
+
  
 }
 
