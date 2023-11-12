@@ -10,11 +10,13 @@ const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
 const  dots = document.querySelectorAll(".dot");
 const  slideshowContainer = document.querySelector(".slideshow-container");
+const  prev = document.querySelector(".prev");
+const  next = document.querySelector(".next");
+
 
 const currentYear = new Date().getFullYear();
 
 
-console.log(slideshowContainer)
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
