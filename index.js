@@ -2,7 +2,7 @@
 const dots = document.querySelectorAll(".dot");
 const mySlides = document.querySelectorAll(".mySlides");
 const homePage = document.querySelector(".home-page");
-const slideshowContainers = document.querySelector(".slideshow-container");
+const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 // team.html page
@@ -88,6 +88,11 @@ function carousel() {
     clearTimeout(clear);
     slideToNext(currenSlide);
   });
+
+  slideshowContainer.addEventListener("mouseenter", function() {
+    console.log("Josue");
+    clearTimeout(clear)
+  })
 }
 
-// carousel()
+carousel()
