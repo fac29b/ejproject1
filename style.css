@@ -410,10 +410,10 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active,
+/* .active,
 .dot:hover {
   background-color: white;
-}
+} */
 
 .fade {
   animation-name: fade;
@@ -459,8 +459,8 @@ hr {
   padding-right: 20px;
 }
 
-.add-white {
-  color: white;
+.switch-to-white {
+  background-color: #fff;
 }
 
 @keyframes fade {

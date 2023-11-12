@@ -1,5 +1,6 @@
 // index.html page
 const dots = document.querySelectorAll(".dot");
+console.log(dots)
 const mySlides = document.querySelectorAll(".mySlides");
 const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
@@ -67,7 +68,7 @@ function goToContactUsPage() {
 }
 
 function carousel() {
-  let currenSlide = 0;
+  let currentSlide = 0;
   let clear;
 
   function advance(index) {
@@ -82,11 +83,11 @@ function carousel() {
     }, 3000);
   }
 
-  advance(currenSlide);
+  advance(currentSlide);
 
   next.addEventListener("click", function () {
     clearTimeout(clear);
-    slideToNext(currenSlide);
+    slideToNext(currentSlide);
   });
 
   slideshowContainer.addEventListener("mouseenter", function () {
@@ -95,29 +96,30 @@ function carousel() {
 
   slideshowContainer.addEventListener("mouseleave", function () {
     clearTimeout(clear);
-    advance(currenSlide);
+    advance(currentSlide);
   });
 
   prev.addEventListener("click", function () {
     clearTimeout(clear);
-    mySlides[currenSlide].style.display = "none";
-    if (currenSlide <= 0) {
-      currenSlide = mySlides.length - 1;
-      mySlides[currenSlide].style.display = "block";
+    mySlides[currentSlide].style.display = "none";
+    dots[currentSlide].style.backgroundColor = "white"
+    if (currentSlide <= 0) {
+      currentSlide = mySlides.length - 1;
+      mySlides[currentSlide].style.display = "block";
     } else {
-      currenSlide--;
-      mySlides[currenSlide].style.display = "block";
+      currentSlide--;
+      mySlides[currentSlide].style.display = "block";
     }
   });
 
   function slideToNext(index) {
-    mySlides[currenSlide].style.display = "none";
+    mySlides[currentSlide].style.display = "none";
     if (index < mySlides.length - 1) {
-      currenSlide = index + 1;
+      currentSlide = index + 1;
     } else {
-      currenSlide = 0;
+      currentSlide = 0;
     }
-    mySlides[currenSlide].style.display = "block";
+    mySlides[currentSlide].style.display = "block";
   }
 }
 
