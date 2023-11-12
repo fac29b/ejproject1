@@ -459,6 +459,10 @@ hr {
   padding-right: 20px;
 }
 
+.add-white {
+  color: white;
+}
+
 @keyframes fade {
   from {
     opacity: 0.4;
