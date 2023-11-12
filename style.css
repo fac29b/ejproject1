@@ -452,7 +452,7 @@ hr {
   color: white;
 }
 
-#mainTitle {
+#main-title {
   font-size: 100px;
   font-family: Bangers;
   border: solid;
@@ -500,7 +500,7 @@ hr {
   body {
     margin-top: 120px;
   }
-  #mainTitle {
+  #main-title {
     font-size: 80px;
   }
 }
