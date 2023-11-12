@@ -3,7 +3,7 @@
 const  dots = document.querySelectorAll(".dot");
 const  mySlides = document.querySelectorAll(".mySlides");
 const homePage = document.querySelector(".home-page");
-const  slideshowContainer = document.querySelector(".slideshow-container");
+const  slideshowContainers = document.querySelector(".slideshow-container");
 const  prev = document.querySelector(".prev");
 const  next = document.querySelector(".next");
 // team.html page
@@ -71,22 +71,30 @@ function goToContactUsPage() {
 }
 
 
-// function carousel() {
-//   let currenSlide = 0;
-//   let clear;
+function carousel() {
+  let currenSlide = 0;
+  let clear;
 
-//   function advance(index) {
-//     slideToNext(index);
+  function advance(index) {
+    slideToNext(index);
 
-//     clear = setTimeout(() => {
-//       if (index + 1 >= )
-//     })
+    clear = setTimeout(() => {
+      if (index + 1 >= mySlides.length) {
+        advance(0);
+      } else {
+        advance(index + 1)
+      }
+    }, 3000);
+  }
 
-   
-//   }
+  advance(currenSlide)
+
+
   
 
-// }
+}
+
+// carousel()
 
 
 
