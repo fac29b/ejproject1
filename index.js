@@ -9,10 +9,12 @@ const requestMessage = document.querySelector(".request-submitted-msg");
 const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
 const  dots = document.querySelectorAll(".dot");
+const  slideshowContainer = document.querySelector(".slideshow-container");
+
 const currentYear = new Date().getFullYear();
 
 
-console.log(dots)
+console.log(slideshowContainer)
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
