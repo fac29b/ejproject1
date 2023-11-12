@@ -1,11 +1,10 @@
-
 // index.html page
-const  dots = document.querySelectorAll(".dot");
-const  mySlides = document.querySelectorAll(".mySlides");
+const dots = document.querySelectorAll(".dot");
+const mySlides = document.querySelectorAll(".mySlides");
 const homePage = document.querySelector(".home-page");
-const  slideshowContainers = document.querySelector(".slideshow-container");
-const  prev = document.querySelector(".prev");
-const  next = document.querySelector(".next");
+const slideshowContainers = document.querySelector(".slideshow-container");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
 // team.html page
 const teamPage = document.querySelector(".team-page");
 // contactus.hmtl page
@@ -21,10 +20,7 @@ const body = document.querySelector("body");
 // variables
 const currentYear = new Date().getFullYear();
 
-
-console.log(mySlides)
-
-
+console.log(mySlides);
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
@@ -70,7 +66,6 @@ function goToContactUsPage() {
   window.location.assign("/contactus.html");
 }
 
-
 function carousel() {
   let currenSlide = 0;
   let clear;
@@ -82,22 +77,17 @@ function carousel() {
       if (index + 1 >= mySlides.length) {
         advance(0);
       } else {
-        advance(index + 1)
+        advance(index + 1);
       }
     }, 3000);
   }
 
-  advance(currenSlide)
+  advance(currenSlide);
 
-
-  
-
+  next.addEventListener("click", function () {
+    clearTimeout(clear);
+    slideToNext(currenSlide);
+  });
 }
 
 // carousel()
-
-
-
-
-
-
