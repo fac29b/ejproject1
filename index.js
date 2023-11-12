@@ -1,14 +1,27 @@
-const footer = document.querySelector("footer");
-const body = document.querySelector("body");
-const form = document.querySelector("form");
+// index.html page
+const dots = document.querySelectorAll(".dot");
+console.log(dots)
+const mySlides = document.querySelectorAll(".my-slides");
 const homePage = document.querySelector(".home-page");
+const slideshowContainer = document.querySelector(".slideshow-container");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+// team.html page
 const teamPage = document.querySelector(".team-page");
+// contactus.hmtl page
+const form = document.querySelector("form");
 const conctactUs = document.querySelector(".contact-us");
 const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
 const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
+// elements used across all pages
+const footer = document.querySelector("footer");
+const body = document.querySelector("body");
+// variables
 const currentYear = new Date().getFullYear();
+
+console.log(mySlides);
 
 footer.innerHTML = ` Superheros ${currentYear}`;
 
@@ -54,33 +67,64 @@ function goToContactUsPage() {
   window.location.assign("/contactus.html");
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+function carousel() {
+  let currentSlide = 0;
+  let clear;
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+  function advance(index) {
+    slideToNext(index);
+
+    clear = setTimeout(() => {
+      if (index + 1 >= mySlides.length) {
+        advance(0);
+      } else {
+        advance(index + 1);
+      }
+    }, 3000);
+  }
+
+  advance(currentSlide);
+
+  next.addEventListener("click", function () {
+    clearTimeout(clear);
+    slideToNext(currentSlide);
+  });
+
+  slideshowContainer.addEventListener("mouseenter", function () {
+    clearTimeout(clear);
+  });
+
+  slideshowContainer.addEventListener("mouseleave", function () {
+    clearTimeout(clear);
+    advance(currentSlide);
+  });
+
+  prev.addEventListener("click", function () {
+    clearTimeout(clear);
+    mySlides[currentSlide].style.display = "none";
+    dots[currentSlide].classList.remove("switch-to-white");
+    if (currentSlide <= 0) {
+      currentSlide = mySlides.length - 1;
+      mySlides[currentSlide].style.display = "block";
+      dots[currentSlide].classList.add('switch-to-white')
+    } else {
+      currentSlide--;
+      mySlides[currentSlide].style.display = "block";
+      dots[currentSlide].classList.add("switch-to-white")
+    }
+  });
+
+  function slideToNext(index) {
+    mySlides[currentSlide].style.display = "none";
+    dots[currentSlide].classList.remove("switch-to-white");
+    if (index < mySlides.length - 1) {
+      currentSlide = index + 1;
+    } else {
+      currentSlide = 0;
+    }
+    mySlides[currentSlide].style.display = "block";
+    dots[currentSlide].classList.add('switch-to-white')
+  }
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+carousel();
