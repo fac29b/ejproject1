@@ -89,16 +89,27 @@ function carousel() {
     slideToNext(currenSlide);
   });
 
-  slideshowContainer.addEventListener("mouseenter", function() {
-    clearTimeout(clear)
-  })
+  slideshowContainer.addEventListener("mouseenter", function () {
+    clearTimeout(clear);
+  });
 
-  slideshowContainer.addEventListener("mouseleave", function() {
+  slideshowContainer.addEventListener("mouseleave", function () {
     clearTimeout(clear);
     advance(currenSlide);
-  })
+  });
 
-  
+  prev.addEventListener("click", function() {
+    clearTimeout(clear);
+    mySlides[currenSlide].style.display = "none";
+    if(currenSlide <= 0) {
+      currenSlide = mySlides.length -1;
+      mySlides[currenSlide].style.display = "block"
+    } else {
+      currenSlide--;
+      mySlides[currenSlide].style.display = "block"
+    }
+     
+  })
 }
 
-carousel()
+carousel();
