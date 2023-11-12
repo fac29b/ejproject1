@@ -98,18 +98,27 @@ function carousel() {
     advance(currenSlide);
   });
 
-  prev.addEventListener("click", function() {
+  prev.addEventListener("click", function () {
     clearTimeout(clear);
     mySlides[currenSlide].style.display = "none";
-    if(currenSlide <= 0) {
-      currenSlide = mySlides.length -1;
-      mySlides[currenSlide].style.display = "block"
+    if (currenSlide <= 0) {
+      currenSlide = mySlides.length - 1;
+      mySlides[currenSlide].style.display = "block";
     } else {
       currenSlide--;
-      mySlides[currenSlide].style.display = "block"
+      mySlides[currenSlide].style.display = "block";
     }
-     
-  })
+  });
+
+  function slideToNext(index) {
+    mySlides[currenSlide].style.display = "none";
+    if (index < mySlides.length - 1) {
+      currenSlide = index + 1;
+    } else {
+      currenSlide = 0;
+    }
+    mySlides[currenSlide].style.display = "block";
+  }
 }
 
 carousel();
