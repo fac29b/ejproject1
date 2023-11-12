@@ -1,19 +1,23 @@
-const footer = document.querySelector("footer");
-const body = document.querySelector("body");
-const form = document.querySelector("form");
+
+// index.html page
 const homePage = document.querySelector(".home-page");
+const  dots = document.querySelectorAll(".dot");
+const  slideshowContainer = document.querySelector(".slideshow-container");
+const  prev = document.querySelector(".prev");
+const  next = document.querySelector(".next");
+// team.html page
 const teamPage = document.querySelector(".team-page");
+// contactus.hmtl page
+const form = document.querySelector("form");
 const conctactUs = document.querySelector(".contact-us");
 const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
 const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
-const  dots = document.querySelectorAll(".dot");
-const  slideshowContainer = document.querySelector(".slideshow-container");
-const  prev = document.querySelector(".prev");
-const  next = document.querySelector(".next");
-
-
+// elements used across all pages
+const footer = document.querySelector("footer");
+const body = document.querySelector("body");
+// variables
 const currentYear = new Date().getFullYear();
 
 
@@ -60,6 +64,12 @@ function goToTeamPage() {
 
 function goToContactUsPage() {
   window.location.assign("/contactus.html");
+}
+
+
+function carousel() {
+  
+
 }
 
 
