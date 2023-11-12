@@ -435,7 +435,7 @@ img {
   flex-grow: 1;
 }
 
-.introText {
+.intro-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,7 +484,7 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-  .introText {
+  .intro-text {
     width: 100%;
   }
 
