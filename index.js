@@ -90,9 +90,15 @@ function carousel() {
   });
 
   slideshowContainer.addEventListener("mouseenter", function() {
-    console.log("Josue");
     clearTimeout(clear)
   })
+
+  slideshowContainer.addEventListener("mouseleave", function() {
+    clearTimeout(clear);
+    advance(currenSlide);
+  })
+
+  
 }
 
 carousel()
