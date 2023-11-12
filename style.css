@@ -463,6 +463,10 @@ hr {
   background-color: #fff;
 }
 
+.green {
+  background-color: #29a587;
+}
+
 @keyframes fade {
   from {
     opacity: 0.4;
