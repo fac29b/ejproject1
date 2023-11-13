@@ -9,7 +9,7 @@ body {
 
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   border-bottom: white 3px solid;
   max-width: 100vw;
@@ -511,4 +511,9 @@ hr {
 .footer-logo {
   width: 2%;
   height: 2%;
+}
+
+.icon-parent-container {
+
+
 }
