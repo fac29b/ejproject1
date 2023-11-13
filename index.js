@@ -125,15 +125,14 @@ function carousel() {
     dots[currentSlide].classList.add("switch-to-white");
   }
 
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", function () {
+      slideToNext(index-1)
+    });
+  });
+
 }
 
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", function () {
-    console.log("josué")
-   
 
-    
-  });
-});
 
 carousel();
