@@ -9,7 +9,7 @@ body {
 
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   border-bottom: white 3px solid;
   max-width: 100vw;
