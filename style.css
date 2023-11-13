@@ -514,6 +514,7 @@ hr {
 }
 
 .icon-parent-container {
-
-
+  display: flex;
+  justify-content: space-between;
+  width: 2.5%;
 }

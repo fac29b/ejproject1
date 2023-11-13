@@ -18,14 +18,16 @@ const contactBody = document.querySelector(".contact-body");
 // elements used across all pages
 const footer = document.querySelector("footer");
 const year = document.querySelector(".year");
-console.log(year)
 const body = document.querySelector("body");
 // variables
 const currentYear = new Date().getFullYear();
 
 
+if(year) {
+  year.innerText = ` Superheros ${currentYear}`;
+}
 
-year.innerText = ` Superheros ${currentYear}`;
+
 
 
 if (submitBtn) {
