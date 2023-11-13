@@ -81,6 +81,8 @@ nav {
 }
 
 footer {
+  display: flex;
+  justify-content: space-evenly;
   max-width: 100vw;
   border-top: 3px solid white;
   height: 5%;
@@ -249,6 +251,7 @@ a:hover {
 i {
   color: #29a587;
 }
+
 
 #link-to-team {
   color: #29a587;
@@ -504,3 +507,33 @@ hr {
     font-size: 80px;
   }
 }
+
+.footer-logo {
+  width: 30px;
+}
+
+.footer-logo * {
+  width: 100%;
+}
+
+@media (max-width: 405px) {
+  footer {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .icon-parent-container,
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+.icon-parent-container {
+  display: flex;
+  justify-content: space-between;
+  width: 2.5%;
+  column-gap: 10px;
+}
+

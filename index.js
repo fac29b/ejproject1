@@ -1,5 +1,8 @@
 // index.html page
 const dots = document.querySelectorAll(".dot");
+
+console.log(dots);
+
 const mySlides = document.querySelectorAll(".my-slides");
 const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
@@ -16,13 +19,12 @@ const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
 const contactBody = document.querySelector(".contact-body");
 // elements used across all pages
 const footer = document.querySelector("footer");
+const year = document.querySelector(".year");
 const body = document.querySelector("body");
 // variables
 const currentYear = new Date().getFullYear();
 
-console.log(mySlides);
-
-footer.innerHTML = ` Superheros ${currentYear}`;
+year.innerText = ` Superheros ${currentYear}`;
 
 if (submitBtn) {
   submitBtn.addEventListener("click", function (e) {
