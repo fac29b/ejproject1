@@ -252,6 +252,7 @@ i {
   color: #29a587;
 }
 
+
 #link-to-team {
   color: #29a587;
   transition: color 1s ease-in-out;
@@ -505,4 +506,9 @@ hr {
   #main-title {
     font-size: 80px;
   }
+}
+
+.footer-logo {
+  width: 2%;
+  height: 2%;
 }
