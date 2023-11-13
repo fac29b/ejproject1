@@ -23,9 +23,9 @@ const body = document.querySelector("body");
 // variables
 const currentYear = new Date().getFullYear();
 
-console.log(mySlides);
 
-footer.innerHTML = ` Superheros ${currentYear}`;
+
+year.innerText = ` Superheros ${currentYear}`;
 
 
 if (submitBtn) {
