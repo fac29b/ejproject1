@@ -509,9 +509,9 @@ hr {
 }
 
 .footer-logo {
-  width: 2%;
-  height: 2%;
+  width: 30px;
 }
+
 
 .icon-parent-container {
   display: flex;
