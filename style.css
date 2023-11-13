@@ -517,4 +517,5 @@ hr {
   display: flex;
   justify-content: space-between;
   width: 2.5%;
+  column-gap: 10px;
 }
