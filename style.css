@@ -512,6 +512,11 @@ hr {
   width: 30px;
 }
 
+.footer-logo * {
+  width: 100%;
+
+}
+
 
 .icon-parent-container {
   display: flex;
