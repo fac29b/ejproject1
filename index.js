@@ -1,6 +1,8 @@
 // index.html page
 const dots = document.querySelectorAll(".dot");
+
 console.log(dots);
+
 const mySlides = document.querySelectorAll(".my-slides");
 const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
@@ -124,6 +126,15 @@ function carousel() {
     mySlides[currentSlide].style.display = "block";
     dots[currentSlide].classList.add("switch-to-white");
   }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", function () {
+      slideToNext(index-1)
+    });
+  });
+
 }
+
+
 
 carousel();
