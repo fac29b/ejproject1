@@ -516,6 +516,10 @@ hr {
   width: 100%;
 }
 
+footer * {
+  cursor: pointer;
+}
+
 @media (max-width: 405px) {
   footer {
     flex-direction: column;
