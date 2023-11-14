@@ -510,9 +510,12 @@ hr {
   width: 100%;
 }
 
-footer * {
+
+footer > *:not(:nth-child(2)) {
   cursor: pointer;
 }
+
+
 
 @media (max-width: 405px) {
   footer {
