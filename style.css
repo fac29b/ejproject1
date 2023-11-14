@@ -262,9 +262,7 @@ i {
   color: white;
 }
 
-.bio-box {
-  display: flex;
-}
+
 .bioImage {
   max-width: 40rem;
 }
