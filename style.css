@@ -21,7 +21,7 @@ ul {
   display: flex;
   align-items: center;
   width: 50%;
-  height: 250px;
+  height: 100px;
   position: absolute;
   padding: 0 10px;
   top: 50%;
@@ -514,6 +514,12 @@ hr {
 
 .footer-logo * {
   width: 100%;
+}
+
+#topImages{
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (max-width: 405px) {
