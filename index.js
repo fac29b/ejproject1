@@ -1,8 +1,7 @@
+
+
 // index.html page
 const dots = document.querySelectorAll(".dot");
-
-console.log(dots);
-
 const mySlides = document.querySelectorAll(".my-slides");
 const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
@@ -27,7 +26,7 @@ const currentYear = new Date().getFullYear();
 year.innerText = ` The Vigilante Agency ${currentYear}`;
 
 if (submitBtn) {
-  submitBtn.addEventListener("click", function (e) {
+  submitBtn.addEventListener("click",  (e) => {
     if (form.checkValidity()) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
@@ -86,21 +85,21 @@ function carousel() {
 
   advance(currentSlide);
 
-  next.addEventListener("click", function () {
+  next.addEventListener("click",  () => {
     clearTimeout(clear);
     slideToNext(currentSlide);
   });
 
-  slideshowContainer.addEventListener("mouseenter", function () {
+  slideshowContainer.addEventListener("mouseenter",  () => {
     clearTimeout(clear);
   });
 
-  slideshowContainer.addEventListener("mouseleave", function () {
+  slideshowContainer.addEventListener("mouseleave",  () => {
     clearTimeout(clear);
     advance(currentSlide);
   });
 
-  prev.addEventListener("click", function () {
+  prev.addEventListener("click",  () => {
     clearTimeout(clear);
     mySlides[currentSlide].style.display = "none";
     dots[currentSlide].classList.remove("switch-to-white");
@@ -138,3 +137,7 @@ function carousel() {
 
 
 carousel();
+
+
+
+

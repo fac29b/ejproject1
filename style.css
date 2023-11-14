@@ -1,3 +1,15 @@
+
+/*Default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+/* End of Default styles */
+
 body {
   background-color: #171b26;
   font-family: "Rowdies", sans-serif;
@@ -56,7 +68,7 @@ li:hover {
   margin-right: auto;
 }
 
-.bioBox {
+.bio-box {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -262,12 +274,6 @@ i {
   color: white;
 }
 
-.bioBox {
-  display: flex;
-}
-.bioImage {
-  max-width: 40rem;
-}
 
 .bio {
   padding: 10px;
@@ -305,31 +311,7 @@ img {
   margin-bottom: 40px;
 }
 
-/* responsiveness */
 
-@media (max-width: 859px) {
-  .super-hero-section {
-    flex-direction: column;
-    row-gap: 40px;
-  }
-}
-
-@media (max-width: 410px) {
-  .bioBox {
-    width: 340px;
-  }
-}
-
-@media (max-width: 280px) {
-  .bioBox {
-    width: 255px;
-  }
-  ul {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
-  }
-}
 
 .pictures {
   flex-shrink: 1;
@@ -342,7 +324,7 @@ img {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  /* flex-shrink: 1; */
+
 }
 
 .my-slides {
@@ -413,10 +395,6 @@ img {
   transition: background-color 0.6s ease;
 }
 
-/* .active,
-.dot:hover {
-  background-color: white;
-} */
 
 .fade {
   animation-name: fade;
@@ -470,6 +448,55 @@ hr {
   background-color: #29a587;
 }
 
+
+
+.footer-logo {
+  width: 30px;
+}
+
+.footer-logo * {
+  width: 100%;
+}
+
+
+footer > *:not(:nth-child(2)) {
+  cursor: pointer;
+}
+
+.icon-parent-container {
+  display: flex;
+  justify-content: space-between;
+  width: 2.5%;
+  column-gap: 10px;
+}
+
+
+/* responsiveness  start*/
+
+@media (max-width: 859px) {
+  .super-hero-section {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 410px) {
+  .bio-box {
+    width: 340px;
+  }
+}
+
+@media (max-width: 280px) {
+  .bio-box {
+    width: 255px;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+}
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -516,12 +543,6 @@ hr {
   width: 100%;
 }
 
-#topImages{
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 @media (max-width: 405px) {
   footer {
     flex-direction: column;
@@ -535,11 +556,4 @@ hr {
 
 }
 
-
-.icon-parent-container {
-  display: flex;
-  justify-content: space-between;
-  width: 2.5%;
-  column-gap: 10px;
-}
-
+/* responsiveness  end*/
