@@ -7,14 +7,16 @@ const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-// team.html page
+const pictures = document.querySelector(".pictures");
+console.log(pictures)
+
 const teamPage = document.querySelector(".team-page");
 // contactus.hmtl page
 const form = document.querySelector("form");
 const conctactUs = document.querySelector(".contact-us");
 const submitBtn = document.querySelector(".submit-btn");
 const requestMessage = document.querySelector(".request-submitted-msg");
-const contacBoxes = Array.from(document.querySelectorAll(".contact-box"));
+const contacBoxes = Array.from(document.querySelectorAll("contact-box"));
 const contactBody = document.querySelector(".contact-body");
 // elements used across all pages
 const footer = document.querySelector("footer");
@@ -67,76 +69,87 @@ function goToContactUsPage() {
   window.location.assign("/contactus.html");
 }
 
-function carousel() {
-  let currentSlide = 0;
-  let clear;
 
-  function advance(index) {
-    slideToNext(index);
-
-    clear = setTimeout(() => {
-      if (index + 1 >= mySlides.length) {
-        advance(0);
-      } else {
-        advance(index + 1);
-      }
-    }, 3000);
-  }
-
-  advance(currentSlide);
-
-  next.addEventListener("click",  () => {
-    clearTimeout(clear);
-    slideToNext(currentSlide);
-  });
-
-  slideshowContainer.addEventListener("mouseenter",  () => {
-    clearTimeout(clear);
-  });
-
-  slideshowContainer.addEventListener("mouseleave",  () => {
-    clearTimeout(clear);
+if (pictures) {
+  function carousel() {
+    let currentSlide = 0;
+    let clear;
+  
+    function advance(index) {
+      slideToNext(index);
+  
+      clear = setTimeout(() => {
+        if (index + 1 >= mySlides.length) {
+          advance(0);
+        } else {
+          advance(index + 1);
+        }
+      }, 3000);
+    }
+  
     advance(currentSlide);
-  });
-
-  prev.addEventListener("click",  () => {
-    clearTimeout(clear);
-    mySlides[currentSlide].style.display = "none";
-    dots[currentSlide].classList.remove("switch-to-white");
-    if (currentSlide <= 0) {
-      currentSlide = mySlides.length - 1;
-      mySlides[currentSlide].style.display = "block";
-      dots[currentSlide].classList.add("switch-to-white");
-    } else {
-      currentSlide--;
-      mySlides[currentSlide].style.display = "block";
-      dots[currentSlide].classList.add("switch-to-white");
-    }
-  });
-
-  function slideToNext(index) {
-    mySlides[currentSlide].style.display = "none";
-    dots[currentSlide].classList.remove("switch-to-white");
-    if (index < mySlides.length - 1) {
-      currentSlide = index + 1;
-    } else {
-      currentSlide = 0;
-    }
-    mySlides[currentSlide].style.display = "block";
-    dots[currentSlide].classList.add("switch-to-white");
-  }
-
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", function () {
-      slideToNext(index-1)
+  
+    next.addEventListener("click",  () => {
+      clearTimeout(clear);
+      slideToNext(currentSlide);
     });
-  });
+  
+    slideshowContainer.addEventListener("mouseenter",  () => {
+      clearTimeout(clear);
+    });
+  
+    slideshowContainer.addEventListener("mouseleave",  () => {
+      clearTimeout(clear);
+      advance(currentSlide);
+    });
+  
+    prev.addEventListener("click",  () => {
+      clearTimeout(clear);
+      mySlides[currentSlide].style.display = "none";
+      dots[currentSlide].classList.remove("switch-to-white");
+      if (currentSlide <= 0) {
+        currentSlide = mySlides.length - 1;
+        mySlides[currentSlide].style.display = "block";
+        dots[currentSlide].classList.add("switch-to-white");
+      } else {
+        currentSlide--;
+        mySlides[currentSlide].style.display = "block";
+        dots[currentSlide].classList.add("switch-to-white");
+      }
+    });
+  
+    function slideToNext(index) {
+      mySlides[currentSlide].style.display = "none";
+      dots[currentSlide].classList.remove("switch-to-white");
+      if (index < mySlides.length - 1) {
+        currentSlide = index + 1;
+      } else {
+        currentSlide = 0;
+      }
+      mySlides[currentSlide].style.display = "block";
+      dots[currentSlide].classList.add("switch-to-white");
+    }
+  
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", function () {
+        slideToNext(index-1)
+      });
+    });
+  
+  }
+  carousel();
 
 }
 
+ 
 
 
-carousel();
+
+
+
+
+
+
 
 
 
