@@ -41,29 +41,29 @@
         team is super too)!
       </p>
       <form>
-        <label for="name">Name:</label>
-        <input class="contact-box" type="text" name="name" required />
-        <label for="company">Company:</label>
-        <input class="contact-box" type="text" name="company" required />
-        <label for="email">Email:</label>
-        <input class="contact-box" type="email" name="email" required />
-        <label for="phone">Phone number:</label>
-        <input class="contact-box" type="tel" name="phone" required />
-        <legend>Preferred hero:</legend>
-        <select name="hero">
-          <option>Select a superhero</option>
-          <option value="superwoman">Wonder Woman</option>
-          <option value="batman">Batman</option>
-          <option value="spiderman">Spiderman</option>
-          <option value="ironman">Iron Man</option>
-          <option value="unknown">I'm not sure</option>
+        <label for="name" >Name:</label>
+        <input class="contact-box" type="text" name="name" id="name" required />
+        <label for="company" >Company:</label>
+        <input class="contact-box" type="text" name="company" id="company" required />
+        <label for="email" >Email:</label>
+        <input class="contact-box" type="email" name="email" id="email" required />
+        <label for="phone" >Phone number:</label>
+        <input class="contact-box" type="tel" name="phone" id="phone" required />
+        <label for="hero-select">Preferred hero:</label>
+        <select name="hero" id="hero-select">
+          <option id="select">Select a superhero</option>
+          <option value="superwoman" id="wonderwoman">Wonder Woman</option>
+          <option value="batman" id="batman">Batman</option>
+          <option value="spiderman" id="spiderman">Spiderman</option>
+          <option value="ironman" id="ironman">Iron Man</option>
+          <option value="unknown" id="unknown">I'm not sure</option>
         </select>
         <p id="not-sure">
           Not sure which hero is best for your company?
           <a id="link-to-team" href="/team.html">Read their profiles first!</a>
         </p>
-        <label for="message">Tell us about how we can save your company:</label>
-        <textarea name="message"></textarea>
+        <label for="message" >Tell us about how we can save your company:</label>
+        <textarea name="message" id="message"></textarea>
         <button class="submit-btn" type="submit">Submit</button>
         <div class="request-submitted-msg">
           <div>
