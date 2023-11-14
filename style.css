@@ -1,20 +1,9 @@
 
-/*Default styles */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-} */
-
-/* End of Default styles */
 
 body {
   background-color: #171b26;
   font-family: "Rowdies", sans-serif;
   color: white;
-  position: relative;
   margin-top: 60px;
   position: relative;
 }
@@ -270,7 +259,7 @@ i {
   transition: color 1s ease-in-out;
 }
 
-#ink-to-team:hover {
+#link-to-team:hover {
   color: white;
 }
 
