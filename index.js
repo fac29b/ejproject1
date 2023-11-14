@@ -1,3 +1,5 @@
+
+
 // index.html page
 const dots = document.querySelectorAll(".dot");
 const mySlides = document.querySelectorAll(".my-slides");
@@ -135,3 +137,7 @@ function carousel() {
 
 
 carousel();
+
+
+
+
