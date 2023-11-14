@@ -58,15 +58,15 @@ if (conctactUs) {
 // functions
 
 function goToHomePage() {
-  window.location.assign("/index.html");
+  window.location.assign("index.html");
 }
 
 function goToTeamPage() {
-  window.location.assign("/team.html");
+  window.location.assign("team.html");
 }
 
 function goToContactUsPage() {
-  window.location.assign("/contactus.html");
+  window.location.assign("contactus.html");
 }
 
 
