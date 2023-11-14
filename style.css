@@ -33,7 +33,7 @@ ul {
   display: flex;
   align-items: center;
   width: 50%;
-  height: 250px;
+  height: 100px;
   position: absolute;
   padding: 0 10px;
   top: 50%;
@@ -533,6 +533,14 @@ footer > *:not(:nth-child(2)) {
   #main-title {
     font-size: 80px;
   }
+}
+
+.footer-logo {
+  width: 30px;
+}
+
+.footer-logo * {
+  width: 100%;
 }
 
 @media (max-width: 405px) {

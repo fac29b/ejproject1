@@ -23,7 +23,7 @@ const body = document.querySelector("body");
 // variables
 const currentYear = new Date().getFullYear();
 
-year.innerText = ` Superheros ${currentYear}`;
+year.innerText = ` The Vigilante Agency ${currentYear}`;
 
 if (submitBtn) {
   submitBtn.addEventListener("click",  (e) => {
