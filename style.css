@@ -414,13 +414,7 @@ img {
   margin: 30px;
 }
 
-hr {
-  width: 100%;
-  border: solid;
-  border-width: 2px;
-  border-radius: 10px;
-  color: white;
-}
+
 
 #main-title {
   font-size: 100px;
