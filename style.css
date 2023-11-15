@@ -8,6 +8,12 @@ body {
   position: relative;
 }
 
+hr{
+    border: solid;
+    background-color: #fff;
+    width: 100%;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -453,9 +459,10 @@ footer > *:not(:nth-child(2)) {
 .icon-parent-container {
   display: flex;
   justify-content: space-between;
-  width: 2.5%;
-  column-gap: 10px;
+  gap: 10px;
 }
+
+
 
 
 /* responsiveness  start*/
