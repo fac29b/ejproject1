@@ -111,18 +111,22 @@ if (pictures) {
     });
   
     prev.addEventListener("click",  () => {
-      clearTimeout(clear);
-      mySlides[currentSlide].style.display = "none";
-      dots[currentSlide].classList.remove("switch-to-white");
-      if (currentSlide <= 0) {
-        currentSlide = mySlides.length - 1;
-        mySlides[currentSlide].style.display = "block";
-        dots[currentSlide].classList.add("switch-to-white");
-      } else {
-        currentSlide--;
-        mySlides[currentSlide].style.display = "block";
-        dots[currentSlide].classList.add("switch-to-white");
+      if(mySlides.length > 0) {
+        clearTimeout(clear);
+        mySlides[currentSlide].style.display = "none";
+        dots[currentSlide].classList.remove("switch-to-white");
+        if (currentSlide <= 0) {
+          currentSlide = mySlides.length - 1;
+          mySlides[currentSlide].style.display = "block";
+          dots[currentSlide].classList.add("switch-to-white");
+        } else {
+          currentSlide--;
+          mySlides[currentSlide].style.display = "block";
+          dots[currentSlide].classList.add("switch-to-white");
+        }
+
       }
+    
     });
   
     function slideToNext(index) {
