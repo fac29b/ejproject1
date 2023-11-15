@@ -55,7 +55,7 @@ if (conctactUs) {
   conctactUs.addEventListener("click", goToContactUsPage);
 }
 
-// functions
+// functions start
 
 function goToHomePage() {
   window.location.assign("index.html");
@@ -140,6 +140,8 @@ if (pictures) {
   makesImagesSlide();
 
 }
+
+// functions end
 
  
 

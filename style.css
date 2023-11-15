@@ -47,6 +47,7 @@ li:hover {
   transform: scale(1.2); /* Apply the transform property for the hover state */
 }
 
+
 .super-hero-main {
   max-width: 1000px;
   display: flex;
@@ -98,6 +99,8 @@ footer {
   column-gap: 10px;
 }
 
+
+
 .images > * {
   width: 200px;
   height: 200px;
@@ -105,7 +108,7 @@ footer {
 }
 
 .images :hover {
-  scale: 1.5;
+  transform: scale(1.5);
   transition: transform 1.5s ease;
 }
 
