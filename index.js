@@ -27,7 +27,6 @@ const currentYear = new Date().getFullYear();
 
 year.innerText = ` The Vigilante Agency ${currentYear}`;
 
-// Preload the image
 
 
 
