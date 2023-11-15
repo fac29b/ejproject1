@@ -8,7 +8,7 @@ const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
-console.log(pictures)
+
 
 const teamPage = document.querySelector(".team-page");
 // contactus.hmtl page
@@ -27,6 +27,12 @@ const currentYear = new Date().getFullYear();
 
 year.innerText = ` The Vigilante Agency ${currentYear}`;
 
+
+
+
+
+
+/* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 if (submitBtn) {
   submitBtn.addEventListener("click",  (e) => {
     if (form.checkValidity()) {
@@ -55,7 +61,7 @@ if (conctactUs) {
   conctactUs.addEventListener("click", goToContactUsPage);
 }
 
-// functions
+// functions start
 
 function goToHomePage() {
   window.location.assign("index.html");
@@ -71,7 +77,7 @@ function goToContactUsPage() {
 
 
 if (pictures) {
-  function carousel() {
+  function makesImagesSlide() {
     let currentSlide = 0;
     let clear;
   
@@ -104,42 +110,52 @@ if (pictures) {
     });
   
     prev.addEventListener("click",  () => {
-      clearTimeout(clear);
-      mySlides[currentSlide].style.display = "none";
-      dots[currentSlide].classList.remove("switch-to-white");
-      if (currentSlide <= 0) {
-        currentSlide = mySlides.length - 1;
-        mySlides[currentSlide].style.display = "block";
-        dots[currentSlide].classList.add("switch-to-white");
-      } else {
-        currentSlide--;
-        mySlides[currentSlide].style.display = "block";
-        dots[currentSlide].classList.add("switch-to-white");
+      if(mySlides.length > 0) {
+        clearTimeout(clear);
+        mySlides[currentSlide].style.display = "none";
+        dots[currentSlide].classList.remove("switch-to-white");
+        if (currentSlide <= 0) {
+          currentSlide = mySlides.length - 1;
+          mySlides[currentSlide].style.display = "block";
+          dots[currentSlide].classList.add("switch-to-white");
+        } else {
+          currentSlide--;
+          mySlides[currentSlide].style.display = "block";
+          dots[currentSlide].classList.add("switch-to-white");
+        }
+
       }
+    
     });
   
     function slideToNext(index) {
-      mySlides[currentSlide].style.display = "none";
-      dots[currentSlide].classList.remove("switch-to-white");
-      if (index < mySlides.length - 1) {
-        currentSlide = index + 1;
-      } else {
-        currentSlide = 0;
+      if(mySlides.length > 0) {
+        mySlides[currentSlide].style.display = "none";
+        dots[currentSlide].classList.remove("switch-to-white");
+        if (index < mySlides.length - 1) {
+          currentSlide = index + 1;
+        } else {
+          currentSlide = 0;
+        }
+        mySlides[currentSlide].style.display = "block";
+        dots[currentSlide].classList.add("switch-to-white");
+
       }
-      mySlides[currentSlide].style.display = "block";
-      dots[currentSlide].classList.add("switch-to-white");
+    
     }
   
     dots.forEach((dot, index) => {
-      dot.addEventListener("click", function () {
+      dot.addEventListener("click",  () => {
         slideToNext(index-1)
       });
     });
   
   }
-  carousel();
+  makesImagesSlide();
 
 }
+
+// functions end
 
  
 
