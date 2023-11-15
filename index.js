@@ -8,7 +8,7 @@ const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
-console.log(pictures)
+
 
 const teamPage = document.querySelector(".team-page");
 // contactus.hmtl page
