@@ -133,7 +133,7 @@ if (pictures) {
     }
   
     dots.forEach((dot, index) => {
-      dot.addEventListener("click", function () {
+      dot.addEventListener("click",  () => {
         slideToNext(index-1)
       });
     });
