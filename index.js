@@ -71,7 +71,7 @@ function goToContactUsPage() {
 
 
 if (pictures) {
-  function carousel() {
+  function makesImagesSlide() {
     let currentSlide = 0;
     let clear;
   
@@ -137,7 +137,7 @@ if (pictures) {
     });
   
   }
-  carousel();
+  makesImagesSlide();
 
 }
 
