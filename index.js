@@ -27,6 +27,11 @@ const currentYear = new Date().getFullYear();
 
 year.innerText = ` The Vigilante Agency ${currentYear}`;
 
+// Preload the image
+
+
+
+
 
 /* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 if (submitBtn) {
@@ -121,15 +126,19 @@ if (pictures) {
     });
   
     function slideToNext(index) {
-      mySlides[currentSlide].style.display = "none";
-      dots[currentSlide].classList.remove("switch-to-white");
-      if (index < mySlides.length - 1) {
-        currentSlide = index + 1;
-      } else {
-        currentSlide = 0;
+      if(mySlides.length > 0) {
+        mySlides[currentSlide].style.display = "none";
+        dots[currentSlide].classList.remove("switch-to-white");
+        if (index < mySlides.length - 1) {
+          currentSlide = index + 1;
+        } else {
+          currentSlide = 0;
+        }
+        mySlides[currentSlide].style.display = "block";
+        dots[currentSlide].classList.add("switch-to-white");
+
       }
-      mySlides[currentSlide].style.display = "block";
-      dots[currentSlide].classList.add("switch-to-white");
+    
     }
   
     dots.forEach((dot, index) => {
