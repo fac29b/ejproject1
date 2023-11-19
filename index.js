@@ -31,8 +31,8 @@ year.innerText = ` The Vigilante Agency ${currentYear}`;
 let superHeroes = [
   {
     name: "Batman",
-    homePagePicuture: "images/images/batman.avif",
-    teamPagePicture: "images/images/batman.avif",
+    homePagePicuture: "images/batman.avif",
+    teamPagePicture: "images/batman.avif",
     bio: "The Dark Knight is the ultimate crime-fighting hero, whose skills lie in his discreteness, attitude, and adeptness at using the latest technology to save the day. With his knowledge of criminal minds and weaponry combined with the powerhouse that is the Batmobile, he’s the perfect solution to any outbreak of criminal activity your city may be facing.For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
     link: "https://www.dc.com/characters/batman", 
     sliderText: "Batman protecting Gotham City",
