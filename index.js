@@ -8,9 +8,9 @@ const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
-
-
+//team.html  page 
 const teamPage = document.querySelector(".team-page");
+const superHeroMain = document.querySelector(".super-hero-main");
 // contactus.hmtl page
 const form = document.querySelector("form");
 const conctactUs = document.querySelector(".contact-us");
@@ -59,11 +59,42 @@ let superHeroes = [
   homePagePicuture: "images/ironman-stance.webp",
   teamPagePicture: "images/ironman.jpeg",
   bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create world-leading technology in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
-  link: "https://www.dc.com/characters/wonder-woman",
+  link: "https://www.dc.com/characters/wonder-man",
   sliderText: "Iron Man harnessing his powers",
   }
   
 ]
+
+console.log(superHeroes[0])
+
+for(var i = 0; i < superHeroes.length; i++) {
+  superHeroMain.innerHTML += ` <section class="super-hero-section">
+  <article class="bio-box">
+    <h2>${superHeroes[i].name}</h2>
+    <div class="super-hero-image">
+      <img
+        src="${superHeroes[i].teamPagePicture}"
+        alt="Photo of Batman"
+      />
+    </div>
+    <aside>
+     ${superHeroes[i].bio}
+    </aside>
+    <aside>
+      For a small additional fee, Batman comes with a top-tier team on his
+      side, including his butler Alfred and sidekick Robin.
+    </aside>
+    <div class="super-hero-link">
+      <a href="${superHeroes[i].link}">More info</a>
+      <i class="fa-sharp fa-solid fa-arrow-right"></i>
+    </div>
+  </article>
+  
+</section>`
+
+}
+
+
 
 
 
