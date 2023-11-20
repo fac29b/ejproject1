@@ -40,7 +40,7 @@ let superHeroes = [
     name: "SpiderMan",
     homePagePicuture: "images/spiderman-scaling.webp",
     teamPagePicture: "images/spiderman-scaling.webp",
-    bio: "Swinging from urban structure to urban structure, Spiderman is the agile fighting powerhouse the bad guys never see coming! Having been bitten by a radioactive spider, Spiderman has the power to create phenomenally strong webs which serve to both propel him through the air and encapsulate enemies. The <span>perfect hero</span> for a modern city of skyscrapers, not only can Spiderman save the day, he also is a skilled photographer and writer to meet both your crime-fighting and marketing needs.",
+    bio: "Swinging from urban structure to urban structure, Spiderman is the agile fighting powerhouse the bad guys never see coming! Having been bitten by a radioactive spider, Spiderman has the power to create phenomenally strong webs which serve to both propel him through the air and encapsulate enemies. The <span>perfect hero</span> for a modern city of skyscrapers, not only can Spiderman save the day, he also is a skilled photographer and writer. lalallalala",
     link: "https://www.marvel.com/characters/spider-man-peter-parker",
     sliderText: "Spiderman ready to leap into action",
     extraInfo:
