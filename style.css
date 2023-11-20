@@ -56,9 +56,8 @@ li:hover {
 
 .super-hero-main {
   max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
