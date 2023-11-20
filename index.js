@@ -69,34 +69,37 @@ let superHeroes = [
   
 ]
 
-console.log(superHeroes[0])
-
-for(var i = 0; i < superHeroes.length; i++) {
-  superHeroMain.innerHTML += ` <section class="super-hero-section">
-  <article class="bio-box">
-    <h2>${superHeroes[i].name}</h2>
-    <div class="super-hero-image">
-      <img
-        src="${superHeroes[i].teamPagePicture}"
-        alt="Photo of Batman"
-      />
-    </div>
-    <aside>
-     ${superHeroes[i].bio}
-    </aside>
-    <aside>
-      ${superHeroes[i].extraInfo}
-     
-    </aside>
-    <div class="super-hero-link">
-      <a href="${superHeroes[i].link}">More info</a>
-      <i class="fa-sharp fa-solid fa-arrow-right"></i>
-    </div>
-  </article>
+if(superHeroMain) {
+  for(var i = 0; i < superHeroes.length; i++) {
+    superHeroMain.innerHTML += ` <section class="super-hero-section">
+    <article class="bio-box">
+      <h2>${superHeroes[i].name}</h2>
+      <div class="super-hero-image">
+        <img
+          src="${superHeroes[i].teamPagePicture}"
+          alt="Photo of Batman"
+        />
+      </div>
+      <aside>
+       ${superHeroes[i].bio}
+      </aside>
+      <aside>
+        ${superHeroes[i].extraInfo}
+       
+      </aside>
+      <div class="super-hero-link">
+        <a href="${superHeroes[i].link}">More info</a>
+        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+      </div>
+    </article>
+    
+  </section>`
   
-</section>`
+  }
 
 }
+
+
 
 
 
