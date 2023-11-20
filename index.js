@@ -1,5 +1,3 @@
-
-
 // index.html page
 const dots = document.querySelectorAll(".dot");
 const mySlides = document.querySelectorAll(".my-slides");
@@ -8,7 +6,7 @@ const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
-//team.html  page 
+//team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
 // contactus.hmtl page
@@ -27,17 +25,17 @@ const currentYear = new Date().getFullYear();
 
 year.innerText = ` The Vigilante Agency ${currentYear}`;
 
-
 let superHeroes = [
   {
     name: "Batman",
     homePagePicuture: "images/batman.avif",
     teamPagePicture: "images/batman.avif",
     bio: "The Dark Knight is the ultimate <span>crime-fighting hero</span>, whose skills lie in his discreteness, attitude, and adeptness at using the latest technology to save the day. With his knowledge of criminal minds and weaponry combined with the powerhouse that is the Batmobile, he’s the perfect solution to any outbreak of criminal activity your city may be facing. For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
-    link: "https://www.dc.com/characters/batman", 
+    link: "https://www.dc.com/characters/batman",
     sliderText: "Batman protecting Gotham City",
-    extraInfo: "For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin."
-    },
+    extraInfo:
+      "For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
+  },
   {
     name: "SpiderMan",
     homePagePicuture: "images/spiderman-scaling.webp",
@@ -45,8 +43,9 @@ let superHeroes = [
     bio: "Swinging from urban structure to urban structure, Spiderman is the agile fighting powerhouse the bad guys never see coming! Having been bitten by a radioactive spider, Spiderman has the power to create phenomenally strong webs which serve to both propel him through the air and encapsulate enemies. The <span>perfect hero</span> for a modern city of skyscrapers, not only can Spiderman save the day, he also is a skilled photographer and writer to meet both your crime-fighting and marketing needs.",
     link: "https://www.marvel.com/characters/spider-man-peter-parker",
     sliderText: "Spiderman ready to leap into action",
-    extraInfo: ""
-    },
+    extraInfo:
+      "Swinging between skyscrapers, Spiderman, the agile powerhouse, spins webs to save the day and captures moments, excelling in every adventure.",
+  },
   {
     name: "WonderWoman",
     teamPagePicture: "images/wonder-woman-1984.avif",
@@ -54,25 +53,23 @@ let superHeroes = [
     bio: "One of the original Amazons, Wonderwoman has <span>near-invincible powers</span>  that could only be bestowed by the gods themselves. Flying through the air without aid, equipped with her golden lasso, Wonderwoman provides the speed and strength required to solve any high-stakes problem you may be facing. Not only is Wonderwoman a fantastic hero, she is also extremely economical to work with, as her natural flying ability and strength to transport equipment mean that all the work she takes on can be easily kept on budget.",
     link: "https://www.dc.com/characters/wonder-woman",
     sliderText: "Wonderwoman having fun on the job",
-    extraInfo: ""
-
-    },
+    extraInfo: "",
+  },
   {
-  name: "Iron Man",
-  homePagePicuture: "images/ironman-stance.webp",
-  teamPagePicture: "images/ironman.jpeg",
-  bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create <span>world-leading technology</span>  in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
-  link: "https://www.dc.com/characters/wonder-man",
-  sliderText: "Iron Man harnessing his powers",
-  extraInfo: ""
-  }
-  
-]
+    name: "Iron Man",
+    homePagePicuture: "images/ironman-stance.webp",
+    teamPagePicture: "images/ironman.jpeg",
+    bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create <span>world-leading technology</span>  in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
+    link: "https://www.dc.com/characters/wonder-man",
+    sliderText: "Iron Man harnessing his powers",
+    extraInfo: "",
+  },
+];
 
-console.log(superHeroes.length)
+console.log(superHeroes[0].extraInfo.split(" "));
 
-if(superHeroMain) {
-  for(var i = 0; i < superHeroes.length; i++) {
+if (superHeroMain) {
+  for (var i = 0; i < superHeroes.length; i++) {
     superHeroMain.innerHTML += ` <section class="super-hero-section">
     <article class="bio-box">
       <h2>${superHeroes[i].name}</h2>
@@ -94,19 +91,13 @@ if(superHeroMain) {
       </div>
     </article>
     
-  </section>`
-  
+  </section>`;
   }
-
 }
-
-
-
-
 
 /* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 if (submitBtn) {
-  submitBtn.addEventListener("click",  (e) => {
+  submitBtn.addEventListener("click", (e) => {
     if (form.checkValidity()) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
@@ -147,15 +138,14 @@ function goToContactUsPage() {
   window.location.assign("contactus.html");
 }
 
-
 if (pictures) {
   function makesImagesSlide() {
     let currentSlide = 0;
     let clear;
-  
+
     function advance(index) {
       slideToNext(index);
-  
+
       clear = setTimeout(() => {
         if (index + 1 >= mySlides.length) {
           advance(0);
@@ -164,25 +154,25 @@ if (pictures) {
         }
       }, 3000);
     }
-  
+
     advance(currentSlide);
-  
-    next.addEventListener("click",  () => {
+
+    next.addEventListener("click", () => {
       clearTimeout(clear);
       slideToNext(currentSlide);
     });
-  
-    slideshowContainer.addEventListener("mouseenter",  () => {
+
+    slideshowContainer.addEventListener("mouseenter", () => {
       clearTimeout(clear);
     });
-  
-    slideshowContainer.addEventListener("mouseleave",  () => {
+
+    slideshowContainer.addEventListener("mouseleave", () => {
       clearTimeout(clear);
       advance(currentSlide);
     });
-  
-    prev.addEventListener("click",  () => {
-      if(mySlides.length > 0) {
+
+    prev.addEventListener("click", () => {
+      if (mySlides.length > 0) {
         clearTimeout(clear);
         mySlides[currentSlide].style.display = "none";
         dots[currentSlide].classList.remove("switch-to-white");
@@ -195,13 +185,11 @@ if (pictures) {
           mySlides[currentSlide].style.display = "block";
           dots[currentSlide].classList.add("switch-to-white");
         }
-
       }
-    
     });
-  
+
     function slideToNext(index) {
-      if(mySlides.length > 0) {
+      if (mySlides.length > 0) {
         mySlides[currentSlide].style.display = "none";
         dots[currentSlide].classList.remove("switch-to-white");
         if (index < mySlides.length - 1) {
@@ -211,34 +199,16 @@ if (pictures) {
         }
         mySlides[currentSlide].style.display = "block";
         dots[currentSlide].classList.add("switch-to-white");
-
       }
-    
     }
-  
+
     dots.forEach((dot, index) => {
-      dot.addEventListener("click",  () => {
-        slideToNext(index-1)
+      dot.addEventListener("click", () => {
+        slideToNext(index - 1);
       });
     });
-  
   }
   makesImagesSlide();
-
 }
 
 // functions end
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
