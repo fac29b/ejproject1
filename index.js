@@ -33,9 +33,10 @@ let superHeroes = [
     name: "Batman",
     homePagePicuture: "images/batman.avif",
     teamPagePicture: "images/batman.avif",
-    bio: "The Dark Knight is the ultimate crime-fighting hero, whose skills lie in his discreteness, attitude, and adeptness at using the latest technology to save the day. With his knowledge of criminal minds and weaponry combined with the powerhouse that is the Batmobile, he’s the perfect solution to any outbreak of criminal activity your city may be facing.For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
+    bio: "The Dark Knight is the ultimate crime-fighting hero, whose skills lie in his discreteness, attitude, and adeptness at using the latest technology to save the day. With his knowledge of criminal minds and weaponry combined with the powerhouse that is the Batmobile, he’s the perfect solution to any outbreak of criminal activity your city may be facing. For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
     link: "https://www.dc.com/characters/batman", 
     sliderText: "Batman protecting Gotham City",
+    extraInfo: "For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin."
     },
   {
     name: "SpiderMan",
@@ -44,6 +45,7 @@ let superHeroes = [
     bio: "Swinging from urban structure to urban structure, Spiderman is the agile fighting powerhouse the bad guys never see coming! Having been bitten by a radioactive spider, Spiderman has the power to create phenomenally strong webs which serve to both propel him through the air and encapsulate enemies. The perfect hero for a modern city of skyscrapers, not only can Spiderman save the day, he also is a skilled photographer and writer to meet both your crime-fighting and marketing needs.",
     link: "https://www.marvel.com/characters/spider-man-peter-parker",
     sliderText: "Spiderman ready to leap into action",
+    extraInfo: ""
     },
   {
     name: "WonderWoman",
@@ -52,6 +54,7 @@ let superHeroes = [
     bio: "One of the original Amazons, Wonderwoman has near-invincible powers that could only be bestowed by the gods themselves. Flying through the air without aid, equipped with her golden lasso, Wonderwoman provides the speed and strength required to solve any high-stakes problem you may be facing. Not only is Wonderwoman a fantastic hero, she is also extremely economical to work with, as her natural flying ability and strength to transport equipment mean that all the work she takes on can be easily kept on budget.",
     link: "https://www.dc.com/characters/wonder-woman",
     sliderText: "Wonderwoman having fun on the job",
+    extraInfo: ""
 
     },
   {
@@ -61,6 +64,7 @@ let superHeroes = [
   bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create world-leading technology in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
   link: "https://www.dc.com/characters/wonder-man",
   sliderText: "Iron Man harnessing his powers",
+  extraInfo: ""
   }
   
 ]
@@ -81,8 +85,8 @@ for(var i = 0; i < superHeroes.length; i++) {
      ${superHeroes[i].bio}
     </aside>
     <aside>
-      For a small additional fee, Batman comes with a top-tier team on his
-      side, including his butler Alfred and sidekick Robin.
+      ${superHeroes[i].extraInfo}
+     
     </aside>
     <div class="super-hero-link">
       <a href="${superHeroes[i].link}">More info</a>
