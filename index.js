@@ -69,6 +69,8 @@ let superHeroes = [
   
 ]
 
+console.log(superHeroes.length)
+
 if(superHeroMain) {
   for(var i = 0; i < superHeroes.length; i++) {
     superHeroMain.innerHTML += ` <section class="super-hero-section">
@@ -85,7 +87,6 @@ if(superHeroMain) {
       </aside>
       <aside>
         ${superHeroes[i].extraInfo}
-       
       </aside>
       <div class="super-hero-link">
         <a href="${superHeroes[i].link}">More info</a>
@@ -98,11 +99,6 @@ if(superHeroMain) {
   }
 
 }
-
-
-
-
-
 
 
 
