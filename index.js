@@ -60,7 +60,7 @@ let superHeroes = [
     homePagePicuture: "images/ironman-stance.webp",
     teamPagePicture: "images/ironman.jpeg",
     bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create <span>world-leading technology</span>  in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
-    link: "https://www.dc.com/characters/wonder-man",
+    link: "https://www.marvel.com/characters/iron-man-tony-stark",
     sliderText: "Iron Man harnessing his powers",
     extraInfo: "",
   },
