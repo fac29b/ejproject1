@@ -502,6 +502,14 @@ footer > *:not(:nth-child(2)) {
   }
 }
 
+@media (max-width: 870px) {
+  .super-hero-main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
 @keyframes fade {
   from {
     opacity: 0.4;
