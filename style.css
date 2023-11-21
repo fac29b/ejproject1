@@ -58,10 +58,12 @@ li:hover {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
 
 .bio-box {
   display: flex;
@@ -301,7 +303,7 @@ img {
 .super-hero-section {
   display: flex;
   margin-bottom: 30px;
-  column-gap: 40px;
+ 
 }
 
 .super-hero-home-page-container {
