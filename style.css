@@ -484,12 +484,7 @@ footer > *:not(:nth-child(2)) {
 
 /* responsiveness  start*/
 
-@media (max-width: 859px) {
-  .super-hero-section {
-    flex-direction: column;
-    row-gap: 40px;
-  }
-}
+
 
 @media (max-width: 410px) {
   .bio-box {
