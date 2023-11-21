@@ -48,8 +48,8 @@ let superHeroes = [
   },
   {
     name: "WonderWoman",
-    teamPagePicture: "images/wonder-woman-1984.avif",
     homePagePicuture: "images/wonder-woman-1984.avif",
+    teamPagePicture: "images/wonderwoman.jpg",
     bio: "One of the original Amazons, Wonderwoman has <span>near-invincible powers</span>  that could only be bestowed by the gods themselves. Flying through the air without aid, equipped with her golden lasso, Wonderwoman provides the speed and strength required to solve any high-stakes problem you may be facing. Not only is Wonderwoman a fantastic hero, she is also extremely economical to work with, as her natural flying ability and strength to transport equipment mean that all the work she takes on can be easily kept on budget.",
     link: "https://www.dc.com/characters/wonder-woman",
     sliderText: "Wonderwoman having fun on the job",
