@@ -61,8 +61,7 @@ li:hover {
   grid-template-columns: repeat(2, 1fr);
   margin-left: auto;
   margin-right: auto;
- 
- 
+
 }
 
 
@@ -305,7 +304,7 @@ img {
 
 .super-hero-section {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
  
