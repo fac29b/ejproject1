@@ -84,21 +84,22 @@ let superHeroes = [
   // {
   //   name: "Wolverine",
   //   homePagePicture: "images/return_of_wolverine_-_publicity_-_p_2018.webp",
-  //   teamPagePicture: "images/return_of_wolverine_-_publicity_-_p_2018.webp",
-  //   bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create <span>world-leading technology</span>  in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
-  //   link: "https://www.marvel.com/characters/iron-man-tony-stark",
-  //   sliderText: "Iron Man harnessing his powers",
+  //   teamPagePicture: "images/Wolverine.jpeg",
+  //   bio: "Wolverine, known as Logan in certain circles, is an <span>unparalleled force</span>. With an unbreakable adamantium skeleton and razor-sharp claws, Wolverine's resilience and combat prowess make him an unmatched ally. Having endured extensive experimentation, he now seeks collaboration to channel his strength into securing a safer world. Logan's journey from pain to power equips him to enhance your organization's resilience and fortitude against any threat.",
+  //   link: "https://www.marvel.com/characters/wolverine-james-howlett/in-comics",
+  //   sliderText: "Wolverine Unleashing His Might",
   //   extraInfo: "",
-  //   text: "Iron Man harnessing his powers",
-  //   homePageAlt: "Iron Man holding his arm forward.",
-  //   teamPageAlt: "Photo of Iron man",
+  //   text: "Wolverine Unleashing His Might",
+  //   homePageAlt: "Wolverine Unleashing His Might",
+  //   teamPageAlt: "Photo of Wolverine",
   // },
 
 ];
 
 
 
-/* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
+/* use a series of 'if' statements to check whether the element exists before performing operationson it.
+ This prevents potential errors if an element is not found. */
 
 if(contactBody) {
   superHeroes.forEach(superHeroe => {
@@ -109,8 +110,6 @@ if(contactBody) {
    selectHero.innerHTML += '<option value="unknown" id="unknown">I\'m not sure</option>';
 
 }
-
-
 
 if (superHeroMain) {
   superHeroes.forEach(superHeroe => {
@@ -152,6 +151,7 @@ if (superHeroHomePageContainer) {
   superHeroes.forEach(() => {
     dotParent.innerHTML += `<span class="dot " ></span>`;
   });
+
   function makesImagesSlide() {
     let currentSlide = 0;
     let clear;
