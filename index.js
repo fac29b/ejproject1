@@ -81,6 +81,19 @@ let superHeroes = [
     teamPageAlt: "Photo of Iron man",
   },
 
+  // {
+  //   name: "Wolverine",
+  //   homePagePicture: "images/return_of_wolverine_-_publicity_-_p_2018.webp",
+  //   teamPagePicture: "images/return_of_wolverine_-_publicity_-_p_2018.webp",
+  //   bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create <span>world-leading technology</span>  in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
+  //   link: "https://www.marvel.com/characters/iron-man-tony-stark",
+  //   sliderText: "Iron Man harnessing his powers",
+  //   extraInfo: "",
+  //   text: "Iron Man harnessing his powers",
+  //   homePageAlt: "Iron Man holding his arm forward.",
+  //   teamPageAlt: "Photo of Iron man",
+  // },
+
 ];
 
 
@@ -92,6 +105,8 @@ if(contactBody) {
     selectHero.innerHTML += `<option value="superwoman" id="wonderwoman">${superHeroe.name}</option>`
 
   })
+   // Add "I'm not sure" option last
+   selectHero.innerHTML += '<option value="unknown" id="unknown">I\'m not sure</option>';
 
 }
 
