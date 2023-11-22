@@ -9,9 +9,11 @@ const pictures = document.querySelector(".pictures");
 const superHeroHomePageContainer = document.querySelector(
   ".super-hero-home-page-container"
 );
+const photo = document.querySelector(".photo");
 //team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
+
 // contactus.hmtl page
 const form = document.querySelector("form");
 const conctactUs = document.querySelector(".contact-us");
@@ -106,15 +108,18 @@ if (superHeroMain) {
 
 if (superHeroHomePageContainer) {
   console.log(slideshowContainer);
-  superHeroes.forEach((superHeroe) => {
-    slideshowContainer.innerHTML += ` <div class="my-slides fade">
+  superHeroes.forEach((superHeroe, index) => {
+    photo.innerHTML += ` <div class="my-slides fade">
     <img class="slide-pics" src="${superHeroe.homePagePicture}" alt="Batman standing over Gotham City"/>
     <figcaption class="text">
       ${superHeroe.text}
     </figcaption>
   </div>
 `;
+makesImagesSlide(index)
+
   });
+ 
 }
 
 if (submitBtn) {
@@ -159,7 +164,7 @@ function goToContactUsPage() {
   window.location.assign("contactus.html");
 }
 
-if (pictures) {
+
   function makesImagesSlide() {
     let currentSlide = 0;
     let clear;
@@ -230,6 +235,6 @@ if (pictures) {
     });
   }
   makesImagesSlide();
-}
+
 
 // functions end
