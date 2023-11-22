@@ -34,7 +34,7 @@ year.innerText = ` The Vigilante Agency ${currentYear}`;
 let superHeroes = [
   {
     name: "Batman",
-    homePagePicture: "images/batman.avif",
+    homePagePicture: "images/batman-over-gotham.png",
     teamPagePicture: "images/batman.avif",
     bio: "The Dark Knight is the ultimate <span>crime-fighting hero</span>, whose skills lie in his discreteness, attitude, and adeptness at using the latest technology to save the day. With his knowledge of criminal minds and weaponry combined with the powerhouse that is the Batmobile, he’s the perfect solution to any outbreak of criminal activity your city may be facing. For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
     link: "https://www.dc.com/characters/batman",
@@ -42,6 +42,7 @@ let superHeroes = [
     extraInfo:
       "For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
     text: "Batman protecting Gotham City",
+    homePageAlt: "Batman standing over Gotham City",
   },
   {
     name: "SpiderMan",
@@ -49,10 +50,11 @@ let superHeroes = [
     teamPagePicture: "images/spiderman.jpeg",
     bio: "Swinging from urban structure to urban structure, Spiderman is the agile fighting powerhouse the bad guys never see coming! Having been bitten by a radioactive spider, Spiderman has the power to create phenomenally strong webs which serve to both propel him through the air and encapsulate enemies. The <span>perfect hero</span> for a modern city of skyscrapers, not only can Spiderman save the day, he also is a skilled photographer and writer. lalallalala",
     link: "https://www.marvel.com/characters/spider-man-peter-parker",
-    sliderText: "Spiderman ready to leap into action",
+    sliderText: " Spiderman ready to leap into action.",
     extraInfo:
       "Swinging between skyscrapers, Spiderman, the agile powerhouse, spins webs to save the day and captures moments, excelling in every adventure.",
     text: " Spiderman ready to leap into action",
+    homePageAlt: "Spiderman crouching on the ground ready to leap.",
   },
   {
     name: "WonderWoman",
@@ -63,6 +65,7 @@ let superHeroes = [
     sliderText: "Wonderwoman having fun on the job",
     extraInfo: "",
     text: "Wonderwoman having fun on the job",
+    homePageAlt: "Wonderwoman dnagling a villain by his ankles.",
   },
   {
     name: "Iron Man",
@@ -73,8 +76,13 @@ let superHeroes = [
     sliderText: "Iron Man harnessing his powers",
     extraInfo: "",
     text: "Iron Man harnessing his powers",
+    homePageAlt: "Iron Man holding his arm forward.",
   },
 ];
+
+superHeroes.forEach(superHeroe => {
+  console.log(superHeroe.homePageAlt)
+})
 
 console.log(superHeroes[0].extraInfo.split(" "));
 
@@ -110,7 +118,7 @@ if (superHeroMain) {
 if (superHeroHomePageContainer) {
   superHeroes.forEach((superHeroe) => {
     photo.innerHTML += ` <div class="my-slides fade">
-    <img class="slide-pics" src="${superHeroe.homePagePicture}" alt="Batman standing over Gotham City"/>
+    <img class="slide-pics" src="${superHeroe.homePagePicture}" alt="${superHeroe.homePageAlt}"/>
     <figcaption class="text">
       ${superHeroe.text}
     </figcaption>
