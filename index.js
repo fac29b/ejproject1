@@ -43,6 +43,7 @@ let superHeroes = [
       "For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
     text: "Batman protecting Gotham City",
     homePageAlt: "Batman standing over Gotham City",
+    teamPageAlt: "Photo of Batman",
   },
   {
     name: "SpiderMan",
@@ -55,6 +56,7 @@ let superHeroes = [
       "Swinging between skyscrapers, Spiderman, the agile powerhouse, spins webs to save the day and captures moments, excelling in every adventure.",
     text: " Spiderman ready to leap into action",
     homePageAlt: "Spiderman crouching on the ground ready to leap.",
+    teamPageAlt: "Photo of Spiderman",
   },
   {
     name: "WonderWoman",
@@ -66,6 +68,7 @@ let superHeroes = [
     extraInfo: "",
     text: "Wonderwoman having fun on the job",
     homePageAlt: "Wonderwoman dnagling a villain by his ankles.",
+    teamPageAlt: "Photo of Wonderwoman",
   },
   {
     name: "Iron Man",
@@ -77,14 +80,11 @@ let superHeroes = [
     extraInfo: "",
     text: "Iron Man harnessing his powers",
     homePageAlt: "Iron Man holding his arm forward.",
+    teamPageAlt: "Photo of Iron man",
   },
 ];
 
-superHeroes.forEach(superHeroe => {
-  console.log(superHeroe.homePageAlt)
-})
 
-console.log(superHeroes[0].extraInfo.split(" "));
 
 /* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 
@@ -96,7 +96,7 @@ if (superHeroMain) {
       <div class="super-hero-image">
         <img
           src="${superHeroes[i].teamPagePicture}"
-          alt="Photo of Batman"
+          alt="${superHeroes[i].teamPageAlt}"
         />
       </div>
       <aside>
