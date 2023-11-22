@@ -1,6 +1,5 @@
 // index.html page
-const dots = document.querySelectorAll(".dot");
-const mySlides = document.querySelectorAll(".my-slides");
+
 const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
@@ -121,7 +120,7 @@ if (superHeroHomePageContainer) {
   superHeroes.forEach(() => {
     dotParent.innerHTML += `<span class="dot " ></span>`;
   });
-   makesImagesSlide();
+  makesImagesSlide();
 }
 
 if (submitBtn) {
@@ -170,8 +169,9 @@ function makesImagesSlide() {
   let currentSlide = 0;
   let clear;
 
-    // Dynamically fetch mySlides and dots collections
-   
+  // Dynamically fetch mySlides and dots collections
+  const mySlides = document.querySelectorAll(".my-slides");
+  const dots = document.querySelectorAll(".dot");
 
   function advance(index) {
     slideToNext(index);
