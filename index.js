@@ -9,7 +9,9 @@ const pictures = document.querySelector(".pictures");
 const superHeroHomePageContainer = document.querySelector(
   ".super-hero-home-page-container"
 );
+const dotParent = document.querySelector("#dot-parent");
 const photo = document.querySelector(".photo");
+console.log(dotParent)
 //team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
@@ -116,9 +118,18 @@ if (superHeroHomePageContainer) {
     </figcaption>
   </div>
 `;
-makesImagesSlide(index)
+
+superHeroes.forEach((superHeroe) => {
+
+
+})
+
+
+
 
   });
+
+  
  
 }
 
