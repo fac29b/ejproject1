@@ -121,6 +121,7 @@ if (superHeroHomePageContainer) {
   superHeroes.forEach(() => {
     dotParent.innerHTML += `<span class="dot " ></span>`;
   });
+   makesImagesSlide();
 }
 
 if (submitBtn) {
@@ -168,6 +169,9 @@ function goToContactUsPage() {
 function makesImagesSlide() {
   let currentSlide = 0;
   let clear;
+
+    // Dynamically fetch mySlides and dots collections
+   
 
   function advance(index) {
     slideToNext(index);
