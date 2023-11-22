@@ -6,6 +6,7 @@ const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
+const superHeroHomePageContainer = document.querySelector(".super-hero-home-page-container");
 //team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
