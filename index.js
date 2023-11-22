@@ -1,20 +1,16 @@
 // index.html page
-
 const homePage = document.querySelector(".home-page");
 const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
-const superHeroHomePageContainer = document.querySelector(
-  ".super-hero-home-page-container"
-);
+const superHeroHomePageContainer = document.querySelector(".super-hero-home-page-container");
 const dotParent = document.querySelector("#dot-parent");
 const photo = document.querySelector(".photo");
 console.log(dotParent);
 //team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
-
 // contactus.hmtl page
 const form = document.querySelector("form");
 const conctactUs = document.querySelector(".contact-us");
@@ -88,33 +84,35 @@ let superHeroes = [
 
 /* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 
+
+
 if (superHeroMain) {
-  for (var i = 0; i < superHeroes.length; i++) {
+  superHeroes.forEach((superHeroe) => {
     superHeroMain.innerHTML += ` <section class="super-hero-section">
     <article class="bio-box">
-      <h2>${superHeroes[i].name}</h2>
+      <h2>${superHeroe.name}</h2>
       <div class="super-hero-image">
         <img
-          src="${superHeroes[i].teamPagePicture}"
-          alt="${superHeroes[i].teamPageAlt}"
+          src="${superHeroe.teamPagePicture}"
+          alt="${superHeroe.teamPageAlt}"
         />
       </div>
       <aside>
-       ${superHeroes[i].bio}
+       ${superHeroe.bio}
       </aside>
       <aside>
-        ${superHeroes[i].extraInfo}
+        ${superHeroe.extraInfo}
       </aside>
       <div class="super-hero-link">
-        <a href="${superHeroes[i].link}">More info</a>
+        <a href="${superHeroe.link}">More info</a>
         <i class="fa-sharp fa-solid fa-arrow-right"></i>
       </div>
     </article>
     
   </section>`;
+  })
   }
-}
-
+ 
 if (superHeroHomePageContainer) {
   superHeroes.forEach((superHeroe) => {
     photo.innerHTML += ` <div class="my-slides fade">
