@@ -6,7 +6,9 @@ const slideshowContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pictures = document.querySelector(".pictures");
-const superHeroHomePageContainer = document.querySelector(".super-hero-home-page-container");
+const superHeroHomePageContainer = document.querySelector(
+  ".super-hero-home-page-container"
+);
 //team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
@@ -29,45 +31,51 @@ year.innerText = ` The Vigilante Agency ${currentYear}`;
 let superHeroes = [
   {
     name: "Batman",
-    homePagePicuture: "images/batman.avif",
+    homePagePicture: "images/batman.avif",
     teamPagePicture: "images/batman.avif",
     bio: "The Dark Knight is the ultimate <span>crime-fighting hero</span>, whose skills lie in his discreteness, attitude, and adeptness at using the latest technology to save the day. With his knowledge of criminal minds and weaponry combined with the powerhouse that is the Batmobile, he’s the perfect solution to any outbreak of criminal activity your city may be facing. For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
     link: "https://www.dc.com/characters/batman",
     sliderText: "Batman protecting Gotham City",
     extraInfo:
       "For a small additional fee, Batman comes with a top-tier team on his side, including his butler Alfred and sidekick Robin.",
+    text: "Batman protecting Gotham City",
   },
   {
     name: "SpiderMan",
-    homePagePicuture: "images/spiderman-scaling.webp",
+    homePagePicture: "images/spiderman-scaling.webp",
     teamPagePicture: "images/spiderman.jpeg",
     bio: "Swinging from urban structure to urban structure, Spiderman is the agile fighting powerhouse the bad guys never see coming! Having been bitten by a radioactive spider, Spiderman has the power to create phenomenally strong webs which serve to both propel him through the air and encapsulate enemies. The <span>perfect hero</span> for a modern city of skyscrapers, not only can Spiderman save the day, he also is a skilled photographer and writer. lalallalala",
     link: "https://www.marvel.com/characters/spider-man-peter-parker",
     sliderText: "Spiderman ready to leap into action",
     extraInfo:
       "Swinging between skyscrapers, Spiderman, the agile powerhouse, spins webs to save the day and captures moments, excelling in every adventure.",
+    text: " Spiderman ready to leap into action",
   },
   {
     name: "WonderWoman",
-    homePagePicuture: "images/wonder-woman-1984.avif",
+    homePagePicture: "images/wonder-woman-1984.avif",
     teamPagePicture: "images/wonderwoman.jpg",
     bio: "One of the original Amazons, Wonderwoman has <span>near-invincible powers</span>  that could only be bestowed by the gods themselves. Flying through the air without aid, equipped with her golden lasso, Wonderwoman provides the speed and strength required to solve any high-stakes problem you may be facing. Not only is Wonderwoman a fantastic hero, she is also extremely economical to work with, as her natural flying ability and strength to transport equipment mean that all the work she takes on can be easily kept on budget.",
     link: "https://www.dc.com/characters/wonder-woman",
     sliderText: "Wonderwoman having fun on the job",
     extraInfo: "",
+    text: "Wonderwoman having fun on the job",
   },
   {
     name: "Iron Man",
-    homePagePicuture: "images/ironman-stance.webp",
+    homePagePicture: "images/ironman-stance.webp",
     teamPagePicture: "images/ironman.jpeg",
     bio: "Iron Man, or Tony Stark to his friends of which you will soon become, is a technological genius. After being injured in action, Tony created his personal arc reactor suit to both keep himself alive and give him the strength needed to withstand catastrophic events. Not only can Iron Man bravely throw himself into any oncoming danger, he can work with your company to create <span>world-leading technology</span>  in your fight against super criminals. Tony needed to make himself stronger, but now he’s ready to make your organisation stronger as well.",
     link: "https://www.marvel.com/characters/iron-man-tony-stark",
     sliderText: "Iron Man harnessing his powers",
     extraInfo: "",
+    text: "Iron Man harnessing his powers",
   },
 ];
 
 console.log(superHeroes[0].extraInfo.split(" "));
+
+/* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 
 if (superHeroMain) {
   for (var i = 0; i < superHeroes.length; i++) {
@@ -96,7 +104,19 @@ if (superHeroMain) {
   }
 }
 
-/* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
+if (superHeroHomePageContainer) {
+  console.log(slideshowContainer);
+  superHeroes.forEach((superHeroe) => {
+    slideshowContainer.innerHTML += ` <div class="my-slides fade">
+    <img class="slide-pics" src="${superHeroe.homePagePicture}" alt="Batman standing over Gotham City"/>
+    <figcaption class="text">
+      ${superHeroe.text}
+    </figcaption>
+  </div>
+`;
+  });
+}
+
 if (submitBtn) {
   submitBtn.addEventListener("click", (e) => {
     if (form.checkValidity()) {
@@ -123,10 +143,6 @@ if (teamPage) {
 
 if (conctactUs) {
   conctactUs.addEventListener("click", goToContactUsPage);
-}
-
-if(superHeroHomePageContainer) {
-  console.log(superHeroHomePageContainer)
 }
 
 // functions start
