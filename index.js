@@ -11,7 +11,7 @@ const superHeroHomePageContainer = document.querySelector(
 );
 const dotParent = document.querySelector("#dot-parent");
 const photo = document.querySelector(".photo");
-console.log(dotParent)
+console.log(dotParent);
 //team.html  page
 const teamPage = document.querySelector(".team-page");
 const superHeroMain = document.querySelector(".super-hero-main");
@@ -109,8 +109,7 @@ if (superHeroMain) {
 }
 
 if (superHeroHomePageContainer) {
-  console.log(slideshowContainer);
-  superHeroes.forEach((superHeroe, index) => {
+  superHeroes.forEach((superHeroe) => {
     photo.innerHTML += ` <div class="my-slides fade">
     <img class="slide-pics" src="${superHeroe.homePagePicture}" alt="Batman standing over Gotham City"/>
     <figcaption class="text">
@@ -118,19 +117,10 @@ if (superHeroHomePageContainer) {
     </figcaption>
   </div>
 `;
-
-superHeroes.forEach((superHeroe) => {
-
-
-})
-
-
-
-
   });
-
-  
- 
+  superHeroes.forEach(() => {
+    dotParent.innerHTML += `<span class="dot " ></span>`;
+  });
 }
 
 if (submitBtn) {
@@ -175,77 +165,75 @@ function goToContactUsPage() {
   window.location.assign("contactus.html");
 }
 
+function makesImagesSlide() {
+  let currentSlide = 0;
+  let clear;
 
-  function makesImagesSlide() {
-    let currentSlide = 0;
-    let clear;
+  function advance(index) {
+    slideToNext(index);
 
-    function advance(index) {
-      slideToNext(index);
-
-      clear = setTimeout(() => {
-        if (index + 1 >= mySlides.length) {
-          advance(0);
-        } else {
-          advance(index + 1);
-        }
-      }, 3000);
-    }
-
-    advance(currentSlide);
-
-    next.addEventListener("click", () => {
-      clearTimeout(clear);
-      slideToNext(currentSlide);
-    });
-
-    slideshowContainer.addEventListener("mouseenter", () => {
-      clearTimeout(clear);
-    });
-
-    slideshowContainer.addEventListener("mouseleave", () => {
-      clearTimeout(clear);
-      advance(currentSlide);
-    });
-
-    prev.addEventListener("click", () => {
-      if (mySlides.length > 0) {
-        clearTimeout(clear);
-        mySlides[currentSlide].style.display = "none";
-        dots[currentSlide].classList.remove("switch-to-white");
-        if (currentSlide <= 0) {
-          currentSlide = mySlides.length - 1;
-          mySlides[currentSlide].style.display = "block";
-          dots[currentSlide].classList.add("switch-to-white");
-        } else {
-          currentSlide--;
-          mySlides[currentSlide].style.display = "block";
-          dots[currentSlide].classList.add("switch-to-white");
-        }
+    clear = setTimeout(() => {
+      if (index + 1 >= mySlides.length) {
+        advance(0);
+      } else {
+        advance(index + 1);
       }
-    });
+    }, 3000);
+  }
 
-    function slideToNext(index) {
-      if (mySlides.length > 0) {
-        mySlides[currentSlide].style.display = "none";
-        dots[currentSlide].classList.remove("switch-to-white");
-        if (index < mySlides.length - 1) {
-          currentSlide = index + 1;
-        } else {
-          currentSlide = 0;
-        }
+  advance(currentSlide);
+
+  next.addEventListener("click", () => {
+    clearTimeout(clear);
+    slideToNext(currentSlide);
+  });
+
+  slideshowContainer.addEventListener("mouseenter", () => {
+    clearTimeout(clear);
+  });
+
+  slideshowContainer.addEventListener("mouseleave", () => {
+    clearTimeout(clear);
+    advance(currentSlide);
+  });
+
+  prev.addEventListener("click", () => {
+    if (mySlides.length > 0) {
+      clearTimeout(clear);
+      mySlides[currentSlide].style.display = "none";
+      dots[currentSlide].classList.remove("switch-to-white");
+      if (currentSlide <= 0) {
+        currentSlide = mySlides.length - 1;
+        mySlides[currentSlide].style.display = "block";
+        dots[currentSlide].classList.add("switch-to-white");
+      } else {
+        currentSlide--;
         mySlides[currentSlide].style.display = "block";
         dots[currentSlide].classList.add("switch-to-white");
       }
     }
+  });
 
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => {
-        slideToNext(index - 1);
-      });
-    });
+  function slideToNext(index) {
+    if (mySlides.length > 0) {
+      mySlides[currentSlide].style.display = "none";
+      dots[currentSlide].classList.remove("switch-to-white");
+      if (index < mySlides.length - 1) {
+        currentSlide = index + 1;
+      } else {
+        currentSlide = 0;
+      }
+      mySlides[currentSlide].style.display = "block";
+      dots[currentSlide].classList.add("switch-to-white");
+    }
   }
-  makesImagesSlide();
 
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      slideToNext(index - 1);
+    });
+  });
+}
+makesImagesSlide();
 
 // functions end
