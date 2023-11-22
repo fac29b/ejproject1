@@ -125,6 +125,10 @@ if (conctactUs) {
   conctactUs.addEventListener("click", goToContactUsPage);
 }
 
+if(superHeroHomePageContainer) {
+  console.log(superHeroHomePageContainer)
+}
+
 // functions start
 
 function goToHomePage() {
