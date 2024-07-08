@@ -34,7 +34,7 @@ year.innerText = ` The Vigilante Agency ${currentYear}`;
 
 /* use a series of 'if' statements to check whether the element exists before performing operationson it. This prevents potential errors if an element is not found. */
 if (submitBtn) {
-  submitBtn.addEventListener("click",  () => {
+  submitBtn.addEventListener("click",  (e) => {
     if (form.checkValidity()) {
       requestMessage.style.visibility = "visible";
       contactBody.style.visibility = "hidden";
@@ -45,7 +45,7 @@ if (submitBtn) {
     } else {
       form.reportValidity();
     }
-    // e.preventDefault();
+    e.preventDefault();
   });
 }
 
