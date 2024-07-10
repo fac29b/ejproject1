@@ -39,8 +39,10 @@ app.post("/submit", (req, res) => {
   const user_company = req.body.company;
   const user_phone = req.body.phone;
   const user_email = req.body.email;
+  const user_hero = req.body.hero;
+  const user_message = req.body.message;
 
-  console.log(`Name: ${user_name}, Email: ${user_email} Company ${user_company} ${user_phone}`);
+  console.log(`Name: ${user_name}, Email: ${user_email} Company ${user_company} ${user_phone} hero ${user_hero} user_message ${user_message}`);
 
   db.run(insertSQL, [user_name, user_email], (err) => {
     if(err) {
