@@ -16,13 +16,35 @@ const db = new sqlite3.Database("./test.db", sqlite3.OPEN_READWRITE, (err) => {
 const createTableSQL = `CREATE TABLE IF NOT EXISTS users(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
-  email TEXT
+  company TEXT,
+  phone TEXT,
+  email TEXT,
+  hero TEXT,
+  message TEXT
 )`;
+
+// const dropTableSQL = `DROP TABLE IF EXISTS users`;
+
+// db.run(dropTableSQL, (err) => {
+//   if(err) {
+//     console.error(`Error dropping table: ${err.message}`);
+//   } else {
+//     console.log('Users table dropped if it existed.');
+//     // Now create the new table
+//     db.run(createTableSQL, (err) => {
+//       if(err) {
+//         console.error(`Error creating table ${err.message}`);
+//       } else {
+//         console.log('Users table created with the new structure.');
+//       }
+//     });
+//   }
+// });
 
 
 
 // const insertSQL = `INSERT INTO users (user_name, user_email) VALUES (?, ?)`;
-const insertSQL = `INSERT INTO users (name, email) VALUES (?, ?)`;
+const insertSQL = `INSERT INTO users (name, company, phone, email, hero, message) VALUES (?,?,? ,?,?,?)`;
 
 db.run(createTableSQL, (err) => {
   if(err) {
@@ -44,7 +66,7 @@ app.post("/submit", (req, res) => {
 
   console.log(`Name: ${user_name}, Email: ${user_email} Company ${user_company} ${user_phone} hero ${user_hero} user_message ${user_message}`);
 
-  db.run(insertSQL, [user_name, user_email], (err) => {
+  db.run(insertSQL, [user_name, user_company, user_phone, user_email, user_hero, user_message], (err) => {
     if(err) {
       console.error('Error inserting data:', err.message);
       // res.status(500).send('Error submitting form');
